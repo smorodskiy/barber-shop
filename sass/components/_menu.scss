@@ -1,0 +1,125 @@
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 40px;
+  // visibility: hidden;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  z-index: 100;
+
+  &.is-open {
+    display: flex;
+    // visibility: visible;
+    // transition: all $anim-duration $anim-function;
+  }
+
+  // &__close-button {
+  //   display: inline-flex;
+  //   align-items: center;
+  //   justify-content: center;
+  //   margin: 0;
+  //   padding: 0;
+  //   width: 40px;
+  //   height: 40px;
+  //   border: none;
+  //   background-color: transparent;
+  //   cursor: pointer;
+  // }
+
+  &__icon-close {
+    @extend %close-button;
+    margin: 21px;
+    top: 0;
+    transform: scale(2);
+    border: none;
+  }
+
+  &__pages {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    color: $text-color-secondary;
+  }
+
+  &__page--active-page {
+    color: $accent-color;
+  }
+
+  &__contact,
+  &__page {
+    margin-bottom: 32px;
+  }
+
+  &__page:last-child {
+    margin-bottom: 302px;
+  }
+
+  &__bootom-wrapper {
+    font-weight: 500;
+    letter-spacing: 0.02em;
+  }
+
+  &__contacts {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  &__contact:first-child {
+    font-size: 34px;
+    line-height: 40px;
+    color: $accent-color;
+  }
+
+  &__contact:last-child {
+    margin-bottom: 64px;
+  }
+
+  &__social-links {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 18px;
+    line-height: 22px;
+    color: $accent-color;
+  }
+
+  &__social-link {
+    margin-right: 20px;
+  }
+
+  &__social-link::after {
+    position: relative;
+    left: 10px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
+    content: "";
+  }
+
+  &__social-link:last-child::after {
+    border: none;
+  }
+
+  &__link {
+    color: inherit;
+    cursor: pointer;
+    transition: padding $anim-duration $anim-function, color $anim-duration $anim-function;
+  }
+}
+
+// Hover
+.menu {
+  // Close button hover
+  &__icon-close:hover {
+    fill: $accent-color;
+  }
+  
+  &__page:hover &__link {
+    padding-left: 5px;
+    color: $accent-color;
+  }
+}

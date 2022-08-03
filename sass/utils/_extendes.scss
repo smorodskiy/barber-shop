@@ -1,0 +1,29 @@
+%top-bottom-shifting-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+%footer-section-title {
+  margin-bottom: 20px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: $font-weight-2;
+  font-size: $font-size-default;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $text-color-third;
+}
+
+%close-button {
+  position: absolute;
+  right: 0;
+  margin: 8px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background: $background-color-page-primary;
+  transition: fill $anim-duration $anim-function;
+  cursor: pointer;
+}
