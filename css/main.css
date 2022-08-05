@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* Animation */
-.presentation-section__container, .masters-section__container, .awards_section__container, .price-section__container, .about-us-section__container {
+.getin-section__container, .presentation-section__container, .masters-section__container, .awards_section__container, .price-section__container, .about-us-section__container {
   padding-top: 84px;
   padding-bottom: 84px;
 }
@@ -50,6 +50,7 @@ li {
   display: block;
 }
 .logo__icon {
+  fill: #fff;
   width: 69px;
   height: 55.5px;
 }
@@ -117,6 +118,10 @@ li {
 .btn--yellow {
   color: #fff;
   background: #FF6C00;
+}
+.btn--trans {
+  color: #fff;
+  background: transparent;
 }
 
 .btn:focus, .btn:hover {
@@ -194,6 +199,7 @@ li {
   cursor: pointer;
 }
 .page-header__hum-icon {
+  fill: #fff;
   width: 40px;
   height: 40px;
 }
@@ -392,4 +398,55 @@ li {
 }
 .presentation-section__picture {
   width: 100%;
+}
+
+.getin-section {
+  background-color: #191c26;
+}
+.getin-section__title {
+  margin-bottom: 44px;
+  font-family: "Raleway";
+  font-size: 42px;
+  line-height: 49px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #fff;
+}
+.getin-section__input::-moz-placeholder, .getin-section__area::-moz-placeholder {
+  vertical-align: top;
+  color: #555555;
+}
+.getin-section__input:-ms-input-placeholder, .getin-section__area:-ms-input-placeholder {
+  vertical-align: top;
+  color: #555555;
+}
+.getin-section__input::placeholder, .getin-section__area::placeholder {
+  vertical-align: top;
+  color: #555555;
+}
+.getin-section__input, .getin-section__area {
+  box-sizing: border-box;
+  padding: 6px 0 6px 0;
+  margin-bottom: 44px;
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: #555555;
+  border-bottom: 1px solid #555555;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  resize: none;
+}
+.getin-section__btn {
+  display: block;
+  padding: 12px 38px 12px 38px;
+  margin: auto;
+}
+
+.getin-section__input:hover, .getin-section__area:hover {
+  color: #fff;
+  border-bottom: 1px solid #fff;
 }/*# sourceMappingURL=main.css.map */

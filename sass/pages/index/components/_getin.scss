@@ -1,0 +1,61 @@
+.getin-section {
+  background-color: #191c26;
+  &__container {
+    @extend %top-bottom-shifting-section;
+  }
+
+  &__order {
+  }
+
+  &__title {
+    margin-bottom: 44px;
+    font-family: "Raleway";
+    // font-weight: $font-weight-2;
+    font-size: $font-size-6;
+    line-height: 49px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: $text-color-third;
+  }
+
+  &__input::placeholder,
+  &__area::placeholder {
+    vertical-align: top;
+    color: $text-color-default;
+  }
+
+  &__input,
+  &__area {
+    box-sizing: border-box;
+    padding: 6px 0 6px 0;
+    margin-bottom: 44px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: $text-color-default;
+    border-bottom: 1px solid $text-color-default;
+
+    // FONT
+    font-weight: $font-weight-1;
+    font-size: $font-size-1;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    resize: none;
+  }
+
+  &__btn {
+    display: block;
+    padding: 12px 38px 12px 38px;
+    margin: auto;
+  }
+}
+
+// HOVER
+.getin-section {
+  &__input:hover,
+  &__area:hover {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+  }
+}

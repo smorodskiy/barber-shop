@@ -22,6 +22,12 @@
     color: $btn-background-color;
     background: $btn-background-color-hover;
   }
+
+  &--trans {
+    color: $btn-background-color;
+    background: transparent;
+  }
+
 }
 
 // HOVER
