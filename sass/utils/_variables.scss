@@ -48,8 +48,7 @@ $btn-background-color-hover: #FF6C00;
 
 // Social icons
 $social-icons-ellipse-background-color: #fff;
-$social-icons-ellipse-background-color-grey: rgba(255, 255, 255, 0.1);
-$social-icons-ellipse-text-color-white: #fff;
+$svg-icon-background-color: #303030;
 
 // Validation colors
 $invalid-color: #f00;
@@ -70,6 +69,9 @@ $navigation-border-color: #ececec;
 // Prices
 $price-section-line-color: rgba(157, 164, 189, 0.12);
 
+// Awards
+$awards-item-bg-color: #F7F7F7;
+
 // Footer
 $address-link-color: rgba(255, 255, 255, 0.6);
 $address-link-color-secondary: #fff;
@@ -82,4 +84,4 @@ $anim-duration: 0.25s;
 $anim-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 // Accent
-$accent-color: #2196f3;
+$accent-color: #FF6C00;

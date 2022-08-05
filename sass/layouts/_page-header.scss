@@ -49,6 +49,10 @@
 
   }
 
+  &__description {
+    max-width: 306px;
+  }
+
   @include media(">tablet") {    
 
   }

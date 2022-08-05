@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* Animation */
-.price-section__container, .about-us-section__container {
+.presentation-section__container, .masters-section__container, .awards_section__container, .price-section__container, .about-us-section__container {
   padding-top: 84px;
   padding-bottom: 84px;
 }
@@ -13,6 +13,7 @@
 }
 
 .container {
+  min-width: 350px;
   padding-left: 31px;
   padding-right: 31px;
   margin-left: auto;
@@ -60,7 +61,7 @@ li {
 }
 .description {
   position: relative;
-  max-width: 306px;
+  max-width: 100%;
 }
 .description__topline {
   display: flex;
@@ -127,6 +128,37 @@ li {
   background: #fff;
 }
 
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+.social-icons__item:first-child {
+  margin-left: 0;
+}
+.social-icons__item {
+  margin-left: 10px;
+}
+.social-icons__ellipse {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: background-color, 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-icons__icon {
+  width: 20px;
+  height: 20px;
+  fill: #303030;
+  transition: fill, 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-icons__ellipse:hover .social-icons__icon {
+  fill: #FF6C00;
+}
+
 .page-header {
   background-repeat: no-repeat;
   min-width: 350px;
@@ -165,6 +197,9 @@ li {
   width: 40px;
   height: 40px;
 }
+.page-header__description {
+  max-width: 306px;
+}
 /*  ----------  Футер  --------------  */
 .page-footer {
   padding-top: 60px;
@@ -179,9 +214,6 @@ li {
   font-size: 14px;
   line-height: 26px;
   letter-spacing: 0.02em;
-}
-.about-us-section__description {
-  max-width: 100%;
 }
 .about-us-section__description-topline {
   color: #303030;
@@ -200,12 +232,8 @@ li {
 .price-section__container {
   background-color: #111319;
   background-repeat: no-repeat;
-  min-width: 350px;
   background-image: url(../images/price_bg.png);
   background-position-x: center;
-}
-.price-section__description {
-  max-width: 100%;
 }
 .price-section__description-title {
   font-size: 42px;
@@ -256,4 +284,112 @@ li {
 .price-section__btn {
   display: block;
   margin: auto;
+}
+
+.awards_section__description-topline {
+  color: #303030;
+}
+.awards_section__description-title {
+  font-size: 42px;
+  line-height: 49px;
+  color: #303030;
+  letter-spacing: 0.05em;
+}
+.awards_section__description-content {
+  margin-bottom: 44px;
+  color: #555555;
+  font-size: 18px;
+  line-height: 30px;
+}
+.awards_section__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.awards_section__item {
+  box-sizing: border-box;
+  width: calc(50% - 15px);
+  padding: 20px 35px 20px 35px;
+  color: #303030;
+  background-color: #F7F7F7;
+  text-align: center;
+}
+.awards_section__item:nth-child(2), .awards_section__item:nth-child(4) {
+  position: relative;
+  top: 30px;
+}
+.awards_section__price {
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 57px;
+}
+.awards_section__price::after {
+  position: relative;
+  top: 8px;
+  left: 2px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ff6c00;
+  content: "+";
+}
+.awards_section__text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+}
+
+.masters-section {
+  background-color: #F7F7F7;
+}
+.masters-section__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 64px;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+.masters-section__picture {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.masters-section__title {
+  margin-bottom: 8px;
+  font-size: 18px;
+  line-height: 25px;
+  color: #303030;
+}
+.masters-section__content {
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 19px;
+  color: #FF6C00;
+}
+.masters-section__description {
+  max-width: 100%;
+}
+.masters-section__description-topline {
+  color: #303030;
+}
+.masters-section__description-title {
+  font-size: 42px;
+  line-height: 49px;
+  color: #303030;
+  letter-spacing: 0.05em;
+}
+
+.presentation-section__description-topline {
+  margin-bottom: 44px;
+  color: #303030;
+  line-height: 21px;
+}
+.presentation-section__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.presentation-section__picture {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */

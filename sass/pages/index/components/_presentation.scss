@@ -1,0 +1,27 @@
+.presentation-section {
+  &__container {
+    @extend %top-bottom-shifting-section;
+  }
+
+  &__description {
+  }
+
+  &__description-topline {
+    margin-bottom: 44px;
+    color: $text-color-4;
+    line-height: 21px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  &__item {
+  }
+
+  &__picture {
+    width: 100%;
+  }
+}
