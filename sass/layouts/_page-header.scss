@@ -1,13 +1,8 @@
 .page-header {
-  // display: flex;
-  border-bottom: $navigation-border-color;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
+  background-color: #000;
 
   &__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+
   }
 
   &__menu-button {
@@ -30,16 +25,12 @@
   }
 
   @include media(">tablet") {    
-    &__icon-menu {
-      display: none;
-    }
+
   }
 
 }
 
 // Hover
 .page-header {
-  &__menu-button:hover &__icon-menu  {
-    fill: $accent-color;
-  }
+
 }

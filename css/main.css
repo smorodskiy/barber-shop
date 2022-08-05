@@ -1,0 +1,120 @@
+@charset "UTF-8";
+/* Animation */
+.is-hidden {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.container {
+  padding-left: 31px;
+  padding-right: 31px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 418px;
+}
+/* Общий стиль для странцы */
+.page {
+  font-family: "Open Sans", "Raleway", sans-serif;
+  font-size: 18px;
+  background: #fff;
+  color: #555555;
+}
+
+/* Убрать подчеркивание на всех ссылках */
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+/* Глобальные атрибуты для списков */
+li {
+  list-style: none;
+  padding: 0;
+}
+
+.logo {
+  width: 69px;
+  height: 55.5px;
+}
+.logo__link {
+  display: block;
+}
+.navigation {
+  display: none;
+}
+.navigation__link--active-page::after {
+  content: "";
+}
+.description {
+  max-width: 306px;
+}
+.description__topline {
+  font-family: "Open Sans", "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.6);
+}
+.description__topline::before {
+  content: "";
+  position: relative;
+  top: 20px;
+  width: 60px;
+  height: 10px;
+  border: 1px solid white;
+  transform: rotate(90deg);
+}
+.description__title {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: 0.05em;
+  color: #fff;
+}
+.description__content {
+  font-family: "Open Sans", "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  color: #9DA4BD;
+}
+
+/* Inside auto layout */
+.page-header {
+  background-color: #000;
+}
+.page-header__menu-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.page-header__icon-menu {
+  width: 24px;
+  height: 16px;
+  transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+/*  ----------  Футер  --------------  */
+.page-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}/*# sourceMappingURL=main.css.map */
