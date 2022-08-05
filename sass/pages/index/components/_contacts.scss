@@ -1,0 +1,53 @@
+.contacts-section {
+  background-color: #191c26;
+  &__container {
+    @extend %top-bottom-shifting-section;
+    background-image: url(../images/contacts_bg.png);
+  }
+
+  &__wrapper {
+  }
+
+  &__title {
+    margin-bottom: 40px;
+    font-family: "Raleway";
+    font-size: $font-size-6;
+    line-height: 49px;
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: #fff;
+  }
+
+  &__list {
+    margin-bottom: 44px;
+  }
+
+  &__item {
+    margin-bottom: 20px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    color: $text-color-second;
+  }
+
+  &__item:nth-child(3) {
+    text-decoration: underline;
+  }
+
+  &__description {
+    
+  }
+
+  &__description-topline {
+    color: $text-color-third;
+  }
+
+  &__description-title {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    color: $text-color-second;
+  }
+}

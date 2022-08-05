@@ -13,12 +13,12 @@
 @import "components/logo";
 @import "components/navigation";
 @import "components/description";
-@import "components/contacts";
+@import "components/socials-media";
 // @import "components/address";
 // @import "components/subscribe-section";
 @import "components/btn";
 @import "components/social-icons";
-// @import "components/menu";
+@import "components/menu";
 
 // Layouts
 @import "layouts/page-header";
@@ -31,6 +31,7 @@
 @import "pages/index/components/masters";
 @import "pages/index/components/presentation";
 @import "pages/index/components/getin";
+@import "pages/index/components/contacts";
 
 
 // Portfolio
