@@ -1,0 +1,52 @@
+.about-us-section {
+  &__container {
+    @extend %top-bottom-shifting-section;
+  }
+
+  &__picture-box {
+    display: none;
+  }
+
+  &__picture {
+  }
+
+  &__content {
+    padding-top: 20px;
+    padding-bottom: 40px;
+
+    // FONT
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 0.02em;
+  }
+
+  &__description {
+    max-width: 100%;
+  }
+
+  &__description-topline {
+    color: $text-color-4;
+  }
+
+  &__description-title {
+    max-width: 333px;
+    font-weight: $font-weight-2;
+    font-size: $desc-font-size;
+    line-height: 33px;
+    color: $text-color-4;
+  }
+
+  &__description-content {
+    color: $text-color-default;
+  }
+}
+
+// .description__topline {
+// }
+// .description__title {
+// }
+// .description__content {
+// }
+
+// .btn__about-us-section {
+// }

@@ -21,52 +21,6 @@
   <body class="page">
     <!-- Шапка -->
     <header class="page-header">
-      <div class="container page-header__container">
-        
-        <!-- Logo -->
-        <div class="logo">
-          <a class="logo__link" href="/">
-            <svg class="logo__icon">
-              <use xlink:href="./images/logo.svg"></use>
-            </svg>
-          </a>
-        </div>
-
-        <nav class="navigation">
-          <!-- Navigation -->
-          <ul class="navigation__pages">
-            <li class="navigation__item">
-              <a class="navigation__link navigation__link--active-page" href="./index.html"
-                >Про нас</a
-              >
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link navigation__link--hover" href="./prices.html"
-                >Послуги та ціни</a
-              >
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link navigation__link--hover" href="./masters.html">Мастери</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link navigation__link--hover" href="./contacts.html"
-                >Контакти</a
-              >
-            </li>
-          </ul>
-        </nav>
-
-        <!-- Contacts -->
-        <ul class="contacts">
-          <li class="contacts__item">
-            <a class="contacts__link" href="tel:380441111111"> +38 044 111 11 11 </a>
-          </li>
-        </ul>
-
-        <!-- button -->
-        <button class="page-header__menu-button" type="button">Онлайн-запис</button>
-      </div>
-
       <!-- Sidebar -->
       <div class="page-header__sidebar">
         <!-- Social links -->
@@ -76,20 +30,80 @@
         </ul>
       </div>
 
-      <!-- Slider -->
-      <div class="page-header__slider">
-        <!-- Header Content -->
+      <!-- CONTAINER -->
+      <div class="container page-header__container">
+        <!-- Top header -->
+        <div class="page-header__top-header">
+          <!-- Logo -->
+          <div class="logo">
+            <a class="logo__link" href="/">
+              <svg class="logo__icon">
+                <use xlink:href="./images/symbol-defs.svg#icon-logo"></use>
+              </svg>
+            </a>
+          </div>
 
-        <!-- ****** Description component -->
-        <div class="description">
-          <!-- First line -->
-          <span class="description__topline">A hair salon for men in Kyiv</span>
-          <!-- Second line -->
-          <h1 class="description__title">BarberShop</h1>
-          <!-- Third line -->
-          <p class="description__content">
-            Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.
-          </p>
+          <!-- Navigation -->
+          <nav class="navigation">
+            <!-- Navigation -->
+            <ul class="navigation__pages">
+              <li class="navigation__item">
+                <a class="navigation__link navigation__link--active-page" href="./index.html"
+                  >Про нас</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link navigation__link--hover" href="./prices.html"
+                  >Послуги та ціни</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link navigation__link--hover" href="./masters.html"
+                  >Мастери</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link navigation__link--hover" href="./contacts.html"
+                  >Контакти</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Contacts -->
+          <ul class="contacts">
+            <li class="contacts__item">
+              <a class="contacts__link" href="tel:380441111111"> +38 044 111 11 11 </a>
+            </li>
+          </ul>
+
+          <!-- Button -->
+          <button class="page-header__menu-button" type="button">Онлайн-запис</button>
+
+          <!-- Menu -->
+          <div class="page-header__hum-button">
+            <a class="page-header__hum-link" href="/">
+              <svg class="page-header__hum-icon">
+                <use xlink:href="./images/symbol-defs.svg#icon-menu"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Slider -->
+        <div class="page-header__slider">
+          <!-- Header Content -->
+          <!-- ****** Description component -->
+          <div class="description">
+            <!-- First line -->
+            <span class="description__topline">A hair salon for men in Kyiv</span>
+            <!-- Second line -->
+            <h1 class="description__title">BarberShop</h1>
+            <!-- Third line -->
+            <p class="description__content">
+              Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.
+            </p>
+          </div>
         </div>
       </div>
     </header>
@@ -98,83 +112,109 @@
       <section class="page-main">
         <!-- About us section -->
         <section class="about-us-section">
+          <!-- CONTAINER -->
           <div class="container about-us-section__container">
             <!-- Pictures -->
-            <img class="about-us-section__picture" src="" alt="Picture 1" />
-            <img class="about-us-section__picture" src="" alt="Picture 2" />
+            <div class="about-us-section__picture-box">
+              <img class="about-us-section__picture" src="" alt="Picture 1" />
+              <img class="about-us-section__picture" src="" alt="Picture 2" />
+            </div>
 
             <!-- ****** Description component -->
-            <div class="description">
+            <div class="description about-us-section__description">
               <!-- First line -->
-              <span class="description__topline">A hair salon for men in Kyiv</span>
+              <span class="description__topline about-us-section__description-topline">О НАС</span>
               <!-- Second line -->
-              <h1 class="description__title">BarberShop</h1>
+              <h1 class="description__title about-us-section__description-title">
+                Лучший Барбершоп твоего города
+              </h1>
               <!-- Third line -->
-              <p class="description__content">
-                Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.
+              <p class="description__content about-us-section__description-content">
+                Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.
               </p>
-
-              <!-- Content -->
-              <p class="about-us-section__content">
-                Мы команда, которая никогда не останавливается на достигнутом и жаждет перемен. И
-                когда ты попадешь в руки нашего мастера, то уже никогда не сможешь быть прежним. Мы
-                команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы
-                усовершенствовать каждого, кто к нам приходит!
-              </p>
-
-              <!-- Button -->
-              <button class="btn btn__about-us-section"></button>
             </div>
+
+            <!-- Content -->
+            <p class="about-us-section__content">
+              Мы команда, которая никогда не останавливается на достигнутом и жаждет перемен. И
+              когда ты попадешь в руки нашего мастера, то уже никогда не сможешь быть прежним. Мы
+              команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы
+              усовершенствовать каждого, кто к нам приходит!
+            </p>
+
+            <!-- Button -->
+            <button class="btn">онлайн-запись</button>
           </div>
         </section>
 
         <!-- Prices section -->
         <section class="price-section">
+          <!-- CONTAINER -->
           <div class="container price-section__container">
             <!-- ****** Description component -->
-            <div class="description">
+            <div class="description price-section__description">
               <!-- First line -->
-              <span class="description__topline">Проведи время в компании лучших мастеров</span>
+              <span class="description__topline price-section__description-topline"
+                >Проведи время в компании лучших мастеров</span
+              >
               <!-- Second line -->
-              <h1 class="description__title">Услуги и цены</h1>
+              <h1 class="description__title price-section__description-title">Услуги и цены</h1>
             </div>
-            <div class="price-section__left-wrapper">
-              <ul>
-                <li>Мужская стрижка</li>
-                <li>Стрижка бороды</li>
-                <li>Стрижка усов</li>
-                <li>Бритье опасной бритвой</li>
-              </ul>
-              <ul>
-                <li>от 300 грн.</li>
-                <li>от 200 грн.</li>
-                <li>от 200 грн.</li>
-                <li>от 200 грн.</li>
-              </ul>
-            </div>
-            <div class="price-section__right-wrapper">
-              <ul>
-                <li>Cтрижка у стажера</li>
-                <li>Стрижка под насадку</li>
-                <li>Детская стрижка (до 12 лет)</li>
-                <li>Камуфлирование седины</li>
-              </ul>
-              <ul>
-                <li>от 50 грн.</li>
-                <li>от 200 грн.</li>
-                <li>от 300 грн.</li>
-                <li>от 200 грн.</li>
-              </ul>
+
+            <!-- Prices -->
+            <div class="price-section__box">
+              <div class="price-section__left-wrapper">
+                <ul class="price-section__names">
+                  <li class="price-section__name">Мужская стрижка</li>
+                  <li class="price-section__name">Стрижка бороды</li>
+                  <li class="price-section__name">Стрижка усов</li>
+                  <li class="price-section__name">Бритье опасной бритвой</li>
+                </ul>
+                <ul class="price-section__costs">
+                  <li class="price-section__cost">от 300 грн.</li>
+                  <li class="price-section__cost">от 200 грн.</li>
+                  <li class="price-section__cost">от 200 грн.</li>
+                  <li class="price-section__cost">от 200 грн.</li>
+                </ul>
+              </div>
+              <div class="price-section__right-wrapper">
+                <ul class="price-section__names">
+                  <li class="price-section__name">Cтрижка у стажера</li>
+                  <li class="price-section__name">Стрижка под насадку</li>
+                  <li class="price-section__name">Детская стрижка (до 12 лет)</li>
+                  <li class="price-section__name">Камуфлирование седины</li>
+                </ul>
+                <ul class="btncosts">
+                  <li class="price-section__cost">от 50 грн.</li>
+                  <li class="price-section__cost">от 200 грн.</li>
+                  <li class="price-section__cost">от 300 грн.</li>
+                  <li class="price-section__cost">от 200 грн.</li>
+                </ul>
+              </div>
             </div>
 
             <!-- Button -->
-            <button class="btn btn__price-section">онлайн-запись</button>
+            <button class="btn btn--yellow price-section__btn">онлайн-запись</button>
           </div>
         </section>
 
         <!-- Awards section -->
         <section class="awards_section">
+          <!-- CONTAINER -->
           <div class="container awards_section__container">
+            <!-- ****** Description component -->
+            <div class="description">
+              <!-- First line -->
+              <span class="description__topline">старая традиционная школа</span>
+              <!-- Second line -->
+              <h2 class="description__title">Почему приходят именно к нам?</h2>
+              <!-- Third line -->
+              <p class="description__content">
+                О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувtствtовать, чем 10 раз
+                прочитать.
+              </p>
+            </div>
+
             <div class="awards_section__left-wrapper">
               <ul class="awards_section__list">
                 <li class="awards_section__item">
@@ -195,19 +235,7 @@
                 </li>
               </ul>
             </div>
-
-            <!-- ****** Description component -->
-            <div class="description">
-              <!-- First line -->
-              <span class="description__topline">старая традиционная школа</span>
-              <!-- Second line -->
-              <h2 class="description__title">Почему приходят именно к нам?</h2>
-              <!-- Third line -->
-              <p class="description__content">
-                О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувtствtовать, чем 10 раз
-                прочитать.
-              </p>
-            </div>
+            
           </div>
         </section>
 

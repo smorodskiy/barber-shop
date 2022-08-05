@@ -1,7 +1,12 @@
 .description {
+  position: relative;
   max-width: 306px;
+
   &__topline {
-    font-family: $font-family;
+    display: flex;
+    align-items: center;
+
+    // FONT
     font-weight: $font-weight-1;
     font-size: $font-size-1;
     line-height: 15px;
@@ -10,45 +15,47 @@
     color: #9da4bd99;
   }
 
+  // &__topline--black {
+  //   // FONT
+  //   color: $text-color-4;
+  // }
+
   &__topline::before {
-    content: '';
-    position: relative;
-    top: 20px;
+    margin-right: 20px;
     width: 60px;
-    height: 10px;
-    border: 1px solid white;
-    transform: rotate(90deg);
+    border-top: 1px solid $line-color;
+    content: "";
   }
 
   &__title {
     padding-top: 20px;
     padding-bottom: 20px;
-    font-family: "Raleway";
+
+    // FONT
+    font-family: 'Raleway', sans-serif;
     font-weight: $font-weight-2;
-    font-size: $font-size-7;
+    font-size: $desc-font-size-large;
     line-height: 56px;
     letter-spacing: 0.05em;
     color: $text-color-third;
-
   }
-  
+
+  // &__title--black {
+  //   font-weight: $font-weight-2;
+  //   font-size: $desc-font-size;
+  //   line-height: 33px;    
+  //   color: $text-color-4;    
+  // }
+
   &__content {
-    font-family: $font-family;
-    font-weight: $font-weight-default;
+    // FONT
     font-size: $font-size-4;
     line-height: 26px;
     letter-spacing: 0.02em;
     color: $text-color-second;
   }
+
+  // &__content--black {
+  //   color: $text-color-default;    
+  // }
 }
-
-// width: 1px;
-// height: 60px;
-
-// background: rgba(157, 164, 189, 0.6);
-// transform: rotate(90deg);
-
-/* Inside auto layout */
-// flex: none;
-// order: 1;
-// flex-grow: 0;

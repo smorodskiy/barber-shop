@@ -1,22 +1,16 @@
 .logo {
-  width: 69px;
-  height: 55.5px;
-
   &__link {
     display: block;
-
   }
 
   &__icon {
-
+    width: 69px;
+    height: 55.5px;
   }
- 
 
-  @include media(">tablet") {    
-    
+  @include media(">tablet") {
   }
-  
+
   @include media(">desktop") {
-    
   }
 }

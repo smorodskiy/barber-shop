@@ -1,18 +1,6 @@
 %top-bottom-shifting-section {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-%footer-section-title {
-  margin-bottom: 20px;
-  font-family: "Roboto";
-  font-style: normal;
-  // font-weight: $font-weight-2;
-  // font-size: $font-size-default;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  // color: $text-color-third;
+  padding-top: $padding-top-bottom;
+  padding-bottom: $padding-top-bottom;
 }
 
 %close-button {

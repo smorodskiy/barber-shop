@@ -1,5 +1,7 @@
 //------------------------------------------------ Global
 // Container
+$padding: 31px;
+$padding-top-bottom: 84px;
 $container-max-width: 418px;
 $t-container-max-width: 689px;
 $d-container-max-width: 1170px;
@@ -12,7 +14,6 @@ $font-size-3: 14px;
 $font-size-4: 16px;
 $font-size-5: 18px;
 $font-size-6: 42px;
-$font-size-7: 48px;
 $font-size-8: 72px;
 
 $font-weight-default: 400;
@@ -23,6 +24,7 @@ $font-weight-2: 700;
 $text-color-default: #555555;
 $text-color-second: #9DA4BD;
 $text-color-third: #fff;
+$text-color-4: #303030;
 $font-family: 'Open Sans', 'Raleway', sans-serif;
 
 // Background colors
@@ -32,10 +34,17 @@ $background-color-third: #191C26;
 
 // ------------------------------------------------ Components
 
+// Description
+$line-color: #9DA4BD;
+$desc-font-size: 28px;
+$desc-font-size-large: 48px;
+
 // Button
-$btn-text-color: #fff;
-$btn-background-color: #2196f3;
-$btn-background-color-hover: #2196f3c8;
+$btn-font-size: 12px;
+$btn-text-color: #303030;
+$btn-background-color: #fff;
+$btn-border-color: #FF6C00;
+$btn-background-color-hover: #FF6C00;
 
 // Social icons
 $social-icons-ellipse-background-color: #fff;
@@ -57,6 +66,9 @@ $logo-second-text-part-color-footer: #fff;
 
 // Navigation
 $navigation-border-color: #ececec;
+
+// Prices
+$price-section-line-color: rgba(157, 164, 189, 0.12);
 
 // Footer
 $address-link-color: rgba(255, 255, 255, 0.6);

@@ -1,7 +1,7 @@
 // Main container
 .container {
-  padding-left: 31px;
-  padding-right: 31px;
+  padding-left: $padding;
+  padding-right: $padding;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
@@ -22,6 +22,7 @@
 .page {
   font-family: $font-family;
   font-size: $font-size-default;
+  font-weight: $font-weight-default;
   background: $background-color-default;
   color: $text-color-default;
 }
