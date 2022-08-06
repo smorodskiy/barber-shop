@@ -1,20 +1,25 @@
 .navigation {
   display: none;
+  margin-right: 25px;
 
   &__pages {
-   
+    display: flex;
   }
 
   &__item {
-    
+    margin-left: 24px;
   }
 
   &__link {
-    
+    font-weight: $font-weight-1;
+    font-size: $font-size-2;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    color: $text-color-third;
   }
 
   &__link--active-page {
-    
+    color: $accent-color;
   }
 
   &__link--active-page::after {
@@ -23,6 +28,14 @@
   }
 
   @include media(">tablet") {
+    display: block;
+  }
+}
 
+
+// Hover
+.navigation {
+  &__link:hover {
+    color: $accent-color;
   }
 }

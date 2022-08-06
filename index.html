@@ -21,15 +21,6 @@
   <body class="page">
     <!-- Шапка -->
     <header class="page-header">
-      <!-- Sidebar -->
-      <div class="page-header__sidebar">
-        <!-- Social links -->
-        <ul class="socials-media">
-          <li class="socials-media__item">Instagram</li>
-          <li class="socials-media__item">YouTube</li>
-        </ul>
-      </div>
-
       <!-- CONTAINER -->
       <div class="container page-header__container">
         <!-- Top header -->
@@ -53,32 +44,26 @@
                 >
               </li>
               <li class="navigation__item">
-                <a class="navigation__link navigation__link--hover" href="./prices.html"
-                  >Послуги та ціни</a
-                >
+                <a class="navigation__link" href="./prices.html">Послуги та ціни</a>
               </li>
               <li class="navigation__item">
-                <a class="navigation__link navigation__link--hover" href="./masters.html"
-                  >Мастери</a
-                >
+                <a class="navigation__link" href="./masters.html">Мастери</a>
               </li>
               <li class="navigation__item">
-                <a class="navigation__link navigation__link--hover" href="./contacts.html"
-                  >Контакти</a
-                >
+                <a class="navigation__link" href="./contacts.html">Контакти</a>
               </li>
             </ul>
           </nav>
 
           <!-- Contacts -->
           <!-- <ul class="contacts">
-            <li class="contacts__item">
-              <a class="contacts__link" href="tel:380441111111"> +38 044 111 11 11 </a>
-            </li>
-          </ul> -->
+                <li class="contacts__item">
+                  <a class="contacts__link" href="tel:380441111111"> +38 044 111 11 11 </a>
+                </li>
+              </ul> -->
 
           <!-- Button -->
-          <button class="page-header__menu-button" type="button">Онлайн-запис</button>
+          <button class="btn btn--trans page-header__btn" type="button">Онлайн-запис</button>
 
           <!-- Menu -->
           <div class="page-header__hum-button">
@@ -90,19 +75,37 @@
           </div>
         </div>
 
-        <!-- Slider -->
-        <div class="page-header__slider">
-          <!-- Header Content -->
-          <!-- ****** Description component -->
-          <div class="description page-header__description">
-            <!-- First line -->
-            <span class="description__topline">A hair salon for men in Kyiv</span>
-            <!-- Second line -->
-            <h1 class="description__title">BarberShop</h1>
-            <!-- Third line -->
-            <p class="description__content">
-              Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.
-            </p>
+        <div class="page-header__wrapper">
+          <!-- Sidebar -->
+          <div class="page-header__sidebar">
+            <!-- Social links -->
+            <ul class="socials-media">
+              <li class="socials-media__item">
+                <a class="socials-media__link" href="#">Instagram</a>
+              </li>
+              <li class="socials-media__item">
+                <a class="socials-media__link" href="#">YouTube</a>                
+              </li>
+            </ul>
+          </div>
+
+          <!-- Slider -->
+          <div class="page-header__slider">
+            <!-- WRAPPER -->
+            <!-- <div class="page-header__slider-wrapper">
+            </div> -->
+
+            <!-- ****** Description component -->
+            <div class="description page-header__description">
+              <!-- First line -->
+              <span class="description__topline">A hair salon for men in Kyiv</span>
+              <!-- Second line -->
+              <h1 class="description__title">BarberShop</h1>
+              <!-- Third line -->
+              <p class="description__content">
+                Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -475,7 +478,6 @@
         </section>
 
         <section class="contacts-section">
-
           <!-- CONTAINER -->
           <div class="container contacts-section__container">
             <div class="contacts-section__wrapper">
@@ -490,14 +492,16 @@
             <!-- ****** Description component -->
             <div class="description contacts-section__description">
               <!-- First line -->
-              <span class="description__topline contacts-section__description-topline">время работы</span>
+              <span class="description__topline contacts-section__description-topline"
+                >время работы</span
+              >
               <!-- Second line -->
-              <h2 class="description__title contacts-section__description-title">Ежедневно с 9:00 до 22:00</h2>
+              <h2 class="description__title contacts-section__description-title">
+                Ежедневно с 9:00 до 22:00
+              </h2>
             </div>
           </div>
-
         </section>
-
       </section>
     </main>
 

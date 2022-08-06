@@ -11,7 +11,7 @@
   // width: 100%;
 
   @include media(">tablet") {    
-    // max-width: $t-container-max-width;
+    max-width: $t-container-max-width;
   }
 
   @include media(">desktop") {

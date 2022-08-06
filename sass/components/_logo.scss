@@ -1,6 +1,10 @@
 .logo {
+  z-index: 1;
+  margin-right: auto;
+
   &__link {
     display: block;
+    cursor: pointer;
   }
 
   &__icon {
@@ -10,6 +14,9 @@
   }
 
   @include media(">tablet") {
+    &__icon {
+      fill: #000;
+    }
   }
 
   @include media(">desktop") {

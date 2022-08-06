@@ -1,30 +1,53 @@
-.contacts {
+// ПЕРЕДИВИТИСЯ!!!!! НА ПОВТОРИ
+
+.socials-media {
+  display: flex;
+  align-items: flex-start;
+  // align-items: center;
+
   &__item {
+
+  }
+
+  &__item:first-child {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+  }
   
+  &__item:first-child::before {
+    margin-right: 40px;
+    width: 60px;
+    border-top: 1px solid $text-color-4;
+    content: "";
   }
 
   &__link {
-    
+    display: block;
+    font-weight: $font-weight-1;
+    font-size: $font-size-1;
+    line-height: 15px;
+    letter-spacing: 0.2em;
+    color: $text-color-4;
   }
-
-  &__icon {
-  
-  }
-
 
   // MEDIA TABLET -------------
   @include media(">tablet") {
-  
+    position: relative;
+    left: 50%;
+    transform-origin: left;
+    transform: translateY(calc(50% - 40px)) rotate(-90deg);
   }
 
   // MEDIA DESKTOP -------------
   @include media(">desktop") {
-   
   }
 }
 
 // ------ Hover
 
-.contacts {
- 
+.socials-media {
+  &__link:hover {
+    color: $accent-color;
+  }
 }

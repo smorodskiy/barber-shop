@@ -33,6 +33,11 @@
   margin-bottom: 0;
   max-width: 418px;
 }
+@media (min-width: 769px) {
+  .container {
+    max-width: 690px;
+  }
+}
 /* Общий стиль для странцы */
 .page {
   font-family: "Open Sans", "Raleway", sans-serif;
@@ -57,20 +62,57 @@ li {
   padding: 0;
 }
 
+.logo {
+  z-index: 1;
+  margin-right: auto;
+}
 .logo__link {
   display: block;
+  cursor: pointer;
 }
 .logo__icon {
   fill: #fff;
   width: 69px;
   height: 55.5px;
 }
+@media (min-width: 769px) {
+  .logo__icon {
+    fill: #000;
+  }
+}
 .navigation {
   display: none;
+  margin-right: 25px;
+}
+.navigation__pages {
+  display: flex;
+}
+.navigation__item {
+  margin-left: 24px;
+}
+.navigation__link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  color: #fff;
+}
+.navigation__link--active-page {
+  color: #FF6C00;
 }
 .navigation__link--active-page::after {
   content: "";
 }
+@media (min-width: 769px) {
+  .navigation {
+    display: block;
+  }
+}
+
+.navigation__link:hover {
+  color: #FF6C00;
+}
+
 .description {
   position: relative;
   max-width: 100%;
@@ -106,6 +148,41 @@ li {
   line-height: 26px;
   letter-spacing: 0.02em;
   color: #9DA4BD;
+}
+
+.socials-media {
+  display: flex;
+  align-items: flex-start;
+}
+.socials-media__item:first-child {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}
+.socials-media__item:first-child::before {
+  margin-right: 40px;
+  width: 60px;
+  border-top: 1px solid #303030;
+  content: "";
+}
+.socials-media__link {
+  display: block;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.2em;
+  color: #303030;
+}
+@media (min-width: 769px) {
+  .socials-media {
+    position: relative;
+    left: 50%;
+    transform-origin: left;
+    transform: translateY(calc(50% - 40px)) rotate(-90deg);
+  }
+}
+.socials-media__link:hover {
+  color: #FF6C00;
 }
 
 .btn {
@@ -260,18 +337,20 @@ li {
 }
 
 .page-header {
-  background-repeat: no-repeat;
   min-width: 350px;
-  background-image: url(../../images/slider_3.jpg);
-  background-position-x: center;
-}
-.page-header__sidebar {
-  display: none;
 }
 .page-header__container {
   position: relative;
-  padding-top: 208px;
-  padding-bottom: 183px;
+  background-repeat: no-repeat;
+  background-image: url(../../images/slider_3.jpg);
+  background-position-x: center;
+  background-size: cover;
+}
+.page-header__wrapper {
+  display: flex;
+}
+.page-header__sidebar {
+  display: none;
 }
 .page-header__top-header {
   position: absolute;
@@ -281,30 +360,74 @@ li {
   align-items: center;
   justify-content: space-between;
 }
-.page-header__menu-button {
+.page-header__btn {
   display: none;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  width: 40px;
-  height: 40px;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
 }
 .page-header__hum-icon {
   fill: #fff;
   width: 40px;
   height: 40px;
 }
+.page-header__slider {
+  padding-top: 208px;
+  padding-bottom: 183px;
+}
 .page-header__description {
   max-width: 306px;
 }
+@media (min-width: 769px) {
+  .page-header__container {
+    background-image: none;
+  }
+  .page-header__sidebar {
+    display: flex;
+    margin-right: 30px;
+    width: 90px;
+    align-items: flex-end;
+    position: relative;
+  }
+  .page-header__btn {
+    display: block;
+  }
+  .page-header__hum-button {
+    display: none;
+  }
+  .page-header__slider {
+    flex-grow: 1;
+    justify-content: center;
+    padding-bottom: 245px;
+    padding-top: 272px;
+    background-repeat: no-repeat;
+    background-image: url(../../images/slider_3.jpg);
+    background-position-x: center;
+    background-size: cover;
+  }
+  .page-header__slider-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .page-header__description {
+    max-width: 355px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 /*  ----------  Футер  --------------  */
-.page-footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
+.page-footer__container {
+  display: flex;
+  justify-content: space-between;
+  margin: 44px auto 44px auto;
+}
+.page-footer__copyright {
+  margin-top: 35px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.2em;
+  color: #9DA4BD;
 }
 .about-us-section__picture-box {
   display: none;

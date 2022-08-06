@@ -1,25 +1,25 @@
 /*  ----------  Футер  --------------  */
 
 .page-footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-
 
   &__container {
-
+    display: flex;
+    justify-content: space-between;
+    margin: 44px auto 44px auto;
   }
 
-  &__social-wrapper-title {
-
+  &__copyright {
+    margin-top: 35px;
+    font-weight: $font-weight-1;
+    font-size: $font-size-1;
+    line-height: 15px;
+    letter-spacing: 0.2em;
+    color: $text-color-second;
   }
 
   @include media(">tablet") {
-
-
   }
 
   @include media(">desktop") {
-
-
   }
 }
