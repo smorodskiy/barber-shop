@@ -39,7 +39,20 @@
   &__description-content {
     color: $text-color-default;
   }
+
+  @include media(">tablet") {
+
+    &__container {
+      display: flex;
+    }
+
+    &__picture-box {
+      display: flex;
+    }
+  }
 }
+
+
 
 // .description__topline {
 // }

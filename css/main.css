@@ -452,6 +452,14 @@ li {
 .about-us-section__description-content {
   color: #555555;
 }
+@media (min-width: 769px) {
+  .about-us-section__container {
+    display: flex;
+  }
+  .about-us-section__picture-box {
+    display: flex;
+  }
+}
 
 .price-section__container {
   background-color: #111319;
