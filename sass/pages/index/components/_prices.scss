@@ -1,6 +1,6 @@
 .price-section {
   &__container {
-    @extend %top-bottom-shifting-section;
+    // @extend %top-bottom-shifting-section;
     background-color: #111319;
     background-repeat: no-repeat;
     background-image: url(../images/price_bg.png);
@@ -24,14 +24,12 @@
     font-size: $font-size-3;
     line-height: 30px;
     letter-spacing: 0.02em;
-
     color: $text-color-second;
     background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
   }
 
   &__left-wrapper {
     display: flex;
-
     justify-content: space-between;
     padding: 30px 30px 0 30px;
   }
@@ -64,6 +62,7 @@
 
   &__costs {
   }
+
   &__cost {
     display: flex;
     padding-bottom: 20px;
@@ -83,5 +82,34 @@
     &__container {
       background-image: url(../images/price_bg_medium.png);
     }
+  }
+
+  @include media(">desktop") {
+
+    &__container {
+      background-image: url(../images/desktop/price_bg.png);
+    }
+
+    &__box {
+      display: flex;
+      margin-bottom: 50px;
+    }
+
+    &__left-wrapper {
+      width: 50%;
+      padding-bottom: 30px;
+    }
+
+    &__right-wrapper {
+      width: 50%;
+      padding-top: 30px;
+      margin-bottom: 0;
+      background: linear-gradient(180deg, #171a24 0%, rgba(9, 11, 19, 0.5) 100%);
+    }
+
+    &__left-wrapper &__name:last-child,
+    &__left-wrapper &__cost:last-child {
+      padding-bottom: 0;
+    }    
   }
 }

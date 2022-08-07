@@ -1,7 +1,7 @@
 .contacts-section {
   background-color: #191c26;
   &__container {
-    @extend %top-bottom-shifting-section;
+    // @extend %top-bottom-shifting-section;
     background-image: url(../images/contacts_bg.png);
   }
 

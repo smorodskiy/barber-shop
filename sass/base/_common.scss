@@ -1,6 +1,8 @@
 // Main container
 .container {
   min-width: 350px;
+  padding-top: $padding-top-bottom;
+  padding-bottom: $padding-top-bottom;
   padding-left: $padding;
   padding-right: $padding;
   margin-left: auto;
@@ -12,10 +14,14 @@
 
   @include media(">tablet") {    
     max-width: $t-container-max-width;
+    padding-top: $t-padding-top-bottom;
+    padding-bottom: $t-padding-top-bottom;
   }
 
   @include media(">desktop") {
     max-width: $d-container-max-width;
+    padding-top: $d-padding-top-bottom;
+    padding-bottom: $d-padding-top-bottom;
   }
 }
 

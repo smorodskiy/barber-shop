@@ -1,7 +1,7 @@
 .awards_section {
-  &__container {
-    @extend %top-bottom-shifting-section;
-  }
+  // &__container {
+  //   @extend %top-bottom-shifting-section;
+  // }
 
   &__description {
   }
@@ -82,6 +82,18 @@
 
     &__list {
       width: calc(2 / 3 * 100%);
+    }
+  }
+
+  @include media(">desktop") {
+    &__container {
+      display: flex;
+      flex-direction: row-reverse;
+      padding-bottom: 235px;
+    }
+
+    &__left-wrapper {
+      justify-content: center;
     }
   }
 }

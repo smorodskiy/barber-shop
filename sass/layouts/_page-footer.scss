@@ -1,11 +1,12 @@
 /*  ----------  Футер  --------------  */
 
 .page-footer {
-
   &__container {
     display: flex;
     justify-content: space-between;
     margin: 44px auto 44px auto;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   &__copyright {
@@ -18,6 +19,10 @@
   }
 
   @include media(">tablet") {
+    &__container {
+      margin: 56px auto 56px auto;
+    }
+
     &__copyright {
       margin-top: 0;
     }

@@ -3,11 +3,13 @@
 
   &__container {
     position: relative;
-    // background-color: grey;
     background-repeat: no-repeat;
     background-image: url(../../images/slider_3.jpg);
     background-position-x: center;
     background-size: cover;
+
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   &__wrapper {
