@@ -4,7 +4,6 @@
   }
 
   &__description {
-    
   }
 
   &__description-topline {
@@ -23,9 +22,6 @@
     color: $text-color-default;
     font-size: $font-size-5;
     line-height: 30px;
-  }
-
-  &__left-wrapper {
   }
 
   &__list {
@@ -72,5 +68,20 @@
     font-weight: $font-weight-1;
     font-size: $font-size-1;
     line-height: 15px;
+  }
+
+  @include media(">tablet") {
+    &__left-wrapper {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    &__description {
+      max-width: 70%;
+    }
+
+    &__list {
+      width: calc(2 / 3 * 100%);
+    }
   }
 }

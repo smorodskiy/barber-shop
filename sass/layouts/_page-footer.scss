@@ -18,6 +18,9 @@
   }
 
   @include media(">tablet") {
+    &__copyright {
+      margin-top: 0;
+    }
   }
 
   @include media(">desktop") {

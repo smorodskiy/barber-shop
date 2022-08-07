@@ -30,6 +30,10 @@
   @include media(">tablet") {
     display: block;
   }
+
+  @include media(">desktop") {
+    margin-right: auto;
+  }
 }
 
 

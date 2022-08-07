@@ -15,7 +15,7 @@
   }
 
   @include media(">desktop") {
-    // max-width: $d-container-max-width;
+    max-width: $d-container-max-width;
   }
 }
 

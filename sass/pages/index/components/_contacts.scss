@@ -5,9 +5,6 @@
     background-image: url(../images/contacts_bg.png);
   }
 
-  &__wrapper {
-  }
-
   &__title {
     margin-bottom: 40px;
     font-family: "Raleway";
@@ -34,10 +31,6 @@
     text-decoration: underline;
   }
 
-  &__description {
-    
-  }
-
   &__description-topline {
     color: $text-color-third;
   }
@@ -45,9 +38,29 @@
   &__description-title {
     font-family: "Open Sans";
     font-weight: 400;
-    font-size: 18px;
+    font-size: 18px;  
     line-height: 30px;
     letter-spacing: 0.02em;
     color: $text-color-second;
+  }
+
+  @include media(">tablet") {
+    &__container {
+      background-image: url(../images/contacts_bg_medium.png);
+    }
+
+    &__wrapper {
+      display: flex;
+      gap: 30px;
+    }
+
+    &__list {
+      width: 50%;
+    }
+
+    &__description {
+      width: 50%;
+    }
+  
   }
 }

@@ -5,6 +5,13 @@
   align-items: flex-start;
   // align-items: center;
 
+  &--vertical {
+    position: relative;
+    left: 50%;
+    transform-origin: left;
+    transform: translateY(calc(50% - 40px)) rotate(-90deg);
+  }
+
   &__item {
 
   }
@@ -33,10 +40,7 @@
 
   // MEDIA TABLET -------------
   @include media(">tablet") {
-    position: relative;
-    left: 50%;
-    transform-origin: left;
-    transform: translateY(calc(50% - 40px)) rotate(-90deg);
+
   }
 
   // MEDIA DESKTOP -------------

@@ -49,10 +49,26 @@
     padding: 12px 38px 12px 38px;
     margin: auto;
   }
+
+  @include media(">tablet") {
+    &__title {
+      text-align: left;
+    }
+
+    &__inputs-wrapper {
+      display: flex;
+      gap: 30px;
+    }
+
+    &__btn {
+      margin: 0;
+    }
+
+  }
 }
 
 // HOVER
-.getin-section {
+.getin-section {  
   &__input:hover,
   &__area:hover {
     color: #fff;

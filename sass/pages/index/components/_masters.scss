@@ -50,4 +50,14 @@
     color: $text-color-4;
     letter-spacing: 0.05em;
   }
+
+  @include media(">tablet") {
+    &__container {
+      max-width: 450px;
+    }
+
+    &__item {
+      width: 100%;
+    }
+  }
 }
