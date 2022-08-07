@@ -3,8 +3,16 @@
     // @extend %top-bottom-shifting-section;
     background-color: #111319;
     background-repeat: no-repeat;
-    background-image: url(../images/price_bg.png);
+    background-image: url(../images/mobile/price_bg.png);
     background-position-x: center;
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/mobile/price_bg@2x.png);
+    }
   }
 
   &__description {
@@ -80,14 +88,27 @@
 
   @include media(">tablet") {
     &__container {
-      background-image: url(../images/price_bg_medium.png);
+      background-image: url(../images/tablet/price_bg.png);
+
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/tablet/price_bg@2x.png);
+      }
     }
   }
 
   @include media(">desktop") {
-
     &__container {
       background-image: url(../images/desktop/price_bg.png);
+
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/desktop/price_bg@2x.png);
+      }
     }
 
     &__box {
@@ -110,6 +131,6 @@
     &__left-wrapper &__name:last-child,
     &__left-wrapper &__cost:last-child {
       padding-bottom: 0;
-    }    
+    }
   }
 }

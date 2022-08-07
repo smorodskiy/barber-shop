@@ -54,6 +54,22 @@
   color: #555555;
 }
 
+.getin-and-contacts-wrapper {
+  padding: 0;
+  max-width: 478px;
+}
+@media (min-width: 769px) {
+  .getin-and-contacts-wrapper {
+    max-width: 750px;
+  }
+}
+@media (min-width: 1201px) {
+  .getin-and-contacts-wrapper {
+    display: flex;
+    max-width: 1230px;
+  }
+}
+
 /* Убрать подчеркивание на всех ссылках */
 a {
   text-decoration: none;
@@ -358,11 +374,16 @@ li {
 .page-header__container {
   position: relative;
   background-repeat: no-repeat;
-  background-image: url(../../images/slider_3.jpg);
+  background-image: url(../images/tablet/slider_3.jpg);
   background-position-x: center;
   background-size: cover;
   padding-top: 0;
   padding-bottom: 0;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .page-header__container {
+    background-image: url(../images/tablet/slider_3@2x.jpg);
+  }
 }
 .page-header__wrapper {
   display: flex;
@@ -416,16 +437,25 @@ li {
     padding-bottom: 245px;
     padding-top: 272px;
     background-repeat: no-repeat;
-    background-image: url(../../images/slider_3.jpg);
+    background-image: url(../images/tablet/slider_3.jpg);
     background-position-x: center;
     background-size: cover;
   }
+}
+@media (min-width: 769px) and (min-device-pixel-ratio: 2), (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 769px) and (min-resolution: 192dpi), (min-width: 769px) and (min-resolution: 2dppx) {
+  .page-header__slider {
+    background-image: url(../images/tablet/slider_3@2x.jpg);
+  }
+}
+@media (min-width: 769px) {
   .page-header__slider-wrapper {
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+}
+@media (min-width: 769px) {
   .page-header__description {
     max-width: 355px;
     margin-left: auto;
@@ -434,8 +464,15 @@ li {
 }
 @media (min-width: 1201px) {
   .page-header__slider {
-    background-image: url(../../images/slider_3_large.jpg);
+    background-image: url(../images/desktop/slider_3_large.jpg);
   }
+}
+@media (min-width: 1201px) and (min-device-pixel-ratio: 2), (min-width: 1201px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1201px) and (min-resolution: 192dpi), (min-width: 1201px) and (min-resolution: 2dppx) {
+  .page-header__slider {
+    background-image: url(../images/desktop/slider_3_large@2x.jpg);
+  }
+}
+@media (min-width: 1201px) {
   .page-header__description {
     margin-left: 100px;
   }
@@ -519,8 +556,14 @@ li {
 .price-section__container {
   background-color: #111319;
   background-repeat: no-repeat;
-  background-image: url(../images/price_bg.png);
+  background-image: url(../images/mobile/price_bg.png);
   background-position-x: center;
+  background-size: cover;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .price-section__container {
+    background-image: url(../images/mobile/price_bg@2x.png);
+  }
 }
 .price-section__description-title {
   font-size: 42px;
@@ -574,27 +617,45 @@ li {
 }
 @media (min-width: 769px) {
   .price-section__container {
-    background-image: url(../images/price_bg_medium.png);
+    background-image: url(../images/tablet/price_bg.png);
+  }
+}
+@media (min-width: 769px) and (min-device-pixel-ratio: 2), (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 769px) and (min-resolution: 192dpi), (min-width: 769px) and (min-resolution: 2dppx) {
+  .price-section__container {
+    background-image: url(../images/tablet/price_bg@2x.png);
   }
 }
 @media (min-width: 1201px) {
   .price-section__container {
     background-image: url(../images/desktop/price_bg.png);
   }
+}
+@media (min-width: 1201px) and (min-device-pixel-ratio: 2), (min-width: 1201px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1201px) and (min-resolution: 192dpi), (min-width: 1201px) and (min-resolution: 2dppx) {
+  .price-section__container {
+    background-image: url(../images/desktop/price_bg@2x.png);
+  }
+}
+@media (min-width: 1201px) {
   .price-section__box {
     display: flex;
     margin-bottom: 50px;
   }
+}
+@media (min-width: 1201px) {
   .price-section__left-wrapper {
     width: 50%;
     padding-bottom: 30px;
   }
+}
+@media (min-width: 1201px) {
   .price-section__right-wrapper {
     width: 50%;
     padding-top: 30px;
     margin-bottom: 0;
     background: linear-gradient(180deg, #171a24 0%, rgba(9, 11, 19, 0.5) 100%);
   }
+}
+@media (min-width: 1201px) {
   .price-section__left-wrapper .price-section__name:last-child, .price-section__left-wrapper .price-section__cost:last-child {
     padding-bottom: 0;
   }
@@ -686,6 +747,9 @@ li {
   gap: 64px;
   text-align: center;
   letter-spacing: 0.02em;
+}
+.masters-section__picture-box {
+  width: 100%;
 }
 .masters-section__picture {
   width: 100%;
@@ -814,17 +878,22 @@ li {
     margin: 0;
   }
 }
+@media (min-width: 1201px) {
+  .getin-section {
+    width: 50%;
+  }
+}
 
 .getin-section__input:hover, .getin-section__area:hover {
   color: #fff;
   border-bottom: 1px solid #fff;
 }
 
-.contacts-section {
-  background-color: #191c26;
-}
 .contacts-section__container {
-  background-image: url(../images/contacts_bg.png);
+  background-color: #191c26;
+  background-image: url(../images/mobile/contacts_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .contacts-section__title {
   margin-bottom: 40px;
@@ -845,12 +914,14 @@ li {
   color: #9DA4BD;
 }
 .contacts-section__item:nth-child(3) {
+  margin-bottom: 0;
   text-decoration: underline;
 }
 .contacts-section__description-topline {
   color: #fff;
 }
 .contacts-section__description-title {
+  padding-bottom: 0;
   font-family: "Open Sans";
   font-weight: 400;
   font-size: 18px;
@@ -860,7 +931,7 @@ li {
 }
 @media (min-width: 769px) {
   .contacts-section__container {
-    background-image: url(../images/contacts_bg_medium.png);
+    background-image: url(../images/tablet/contacts_bg.png);
   }
   .contacts-section__wrapper {
     display: flex;
@@ -868,8 +939,28 @@ li {
   }
   .contacts-section__list {
     width: 50%;
+    margin-bottom: 0;
   }
   .contacts-section__description {
     width: 50%;
+  }
+}
+@media (min-width: 1201px) {
+  .contacts-section {
+    width: 50%;
+  }
+  .contacts-section__container {
+    padding-left: 100px;
+    padding-right: 100px;
+    background-image: url(../images/desktop/contacts_bg.png);
+  }
+  .contacts-section__title {
+    text-align: left;
+  }
+  .contacts-section__list {
+    margin-bottom: 66px;
+  }
+  .contacts-section__wrapper {
+    display: block;
   }
 }/*# sourceMappingURL=main.css.map */

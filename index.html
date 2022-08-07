@@ -278,7 +278,30 @@
             <!-- Masters -->
             <ul class="masters-section__list">
               <li class="masters-section__item">
-                <img class="masters-section__picture" src="./images/masters/img1.jpg" alt="" />
+                <!-- PIC1 -->
+                <picture class="masters-section__picture-box">
+                  <source
+                    srcset="./images/mobile/master1.jpg 1x, ./images/mobile/master1@2x.jpg 2x"
+                    media="(max-width: 768px)"
+                    sizes=""
+                  />
+                  <source
+                    srcset="./images/tablet/master1.jpg 1x, ./images/tablet/master1@2x.jpg 2x"
+                    media="(max-width: 1200px)"
+                    sizes=""
+                  />
+                  <source
+                    srcset="./images/desktop/master1.jpg 1x, ./images/desktop/master1@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                    sizes=""
+                  />
+                  <img
+                    class="masters-section__picture"
+                    src="./images/desktop/master1.jpg"
+                    alt="Master 1"
+                  />
+                </picture>
+
                 <h2 class="masters-section__title">John Smith</h2>
                 <p class="masters-section__content">ExtrTeme Barber</p>
 
@@ -323,7 +346,29 @@
                 </ul>
               </li>
               <li class="masters-section__item">
-                <img class="masters-section__picture" src="./images/masters/img2.jpg" alt="" />
+                <!-- PIC2 -->
+                <picture class="masters-section__picture-box">
+                  <source
+                    srcset="./images/mobile/master2.jpg 1x, ./images/mobile/master2@2x.jpg 2x"
+                    media="(max-width: 768px)"
+                    sizes=""
+                  />
+                  <source
+                    srcset="./images/tablet/master2.jpg 1x, ./images/tablet/master2@2x.jpg 2x"
+                    media="(max-width: 1200px)"
+                    sizes=""
+                  />
+                  <source
+                    srcset="./images/desktop/master2.jpg 1x, ./images/desktop/master2@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                    sizes=""
+                  />
+                  <img
+                    class="masters-section__picture"
+                    src="./images/desktop/master2.jpg"
+                    alt="Master 2"
+                  />
+                </picture>
                 <h2 class="masters-section__title">Michele Doe</h2>
                 <p class="masters-section__content">Extreme Barber</p>
 
@@ -368,7 +413,29 @@
                 </ul>
               </li>
               <li class="masters-section__item">
-                <img class="masters-section__picture" src="./images/masters/img3.jpg" alt="" />
+                <!-- PIC1 -->
+                <picture class="masters-section__picture-box">
+                  <source
+                    srcset="./images/mobile/master3.jpg 1x, ./images/mobile/master3@2x.jpg 2x"
+                    media="(max-width: 768px)"
+                    sizes=""
+                  />
+                  <source
+                    srcset="./images/tablet/master3.jpg 1x, ./images/tablet/master3@2x.jpg 2x"
+                    media="(max-width: 1200px)"
+                    sizes=""
+                  />
+                  <source
+                    srcset="./images/desktop/master3.jpg 1x, ./images/desktop/master3@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                    sizes=""
+                  />
+                  <img
+                    class="masters-section__picture"
+                    src="./images/desktop/master3.jpg"
+                    alt="Master 3"
+                  />
+                </picture>
                 <h2 class="masters-section__title">Alan Black</h2>
                 <p class="masters-section__content">Extreme Barber</p>
 
@@ -432,99 +499,123 @@
             <ul class="presentation-section__list">
               <li class="presentation-section__item">
                 <!-- PIC1 -->
-                <picture class="presentation-section__picture">
+                <picture class="">
                   <source srcset="./images/presentation/img_1.jpg" media="(max-width: 1200px)" />
                   <source srcset="./images/desktop/presentation1.jpg" media="(min-width: 1201px)" />
-                  <img src="./images/desktop/presentation1.jpg" alt="Picture 1" />
-                </picture>  
+                  <img
+                    class="presentation-section__picture"
+                    src="./images/desktop/presentation1.jpg"
+                    alt="Picture 1"
+                  />
+                </picture>
               </li>
               <li class="presentation-section__item">
                 <!-- PIC2 -->
-                <picture class="presentation-section__picture">
+                <picture class="">
                   <source srcset="./images/presentation/img_2.jpg" media="(max-width: 1200px)" />
                   <source srcset="./images/desktop/presentation2.jpg" media="(min-width: 1201px)" />
-                  <img src="./images/desktop/presentation2.jpg" alt="Picture 2" />
-                </picture>  
+                  <img
+                    class="presentation-section__picture"
+                    src="./images/desktop/presentation2.jpg"
+                    alt="Picture 2"
+                  />
+                </picture>
               </li>
               <li class="presentation-section__item">
                 <!-- PIC3 -->
-                <picture class="presentation-section__picture">
+                <picture class="">
                   <source srcset="./images/presentation/img_3.jpg" media="(max-width: 1200px)" />
                   <source srcset="./images/desktop/presentation3.jpg" media="(min-width: 1201px)" />
-                  <img src="./images/desktop/presentation3.jpg" alt="Picture 3" />
-                </picture>  
+                  <img
+                    class="presentation-section__picture"
+                    src="./images/desktop/presentation3.jpg"
+                    alt="Picture 3"
+                  />
+                </picture>
               </li>
               <li class="presentation-section__item">
                 <!-- PIC4 -->
-                <picture class="presentation-section__picture">
+                <picture class="">
                   <source srcset="./images/presentation/img_4.jpg" media="(max-width: 1200px)" />
                   <source srcset="./images/desktop/presentation4.jpg" media="(min-width: 1201px)" />
-                  <img src="./images/desktop/presentation4.jpg" alt="Picture 4" />
-                </picture>  
+                  <img
+                    class="presentation-section__picture"
+                    src="./images/desktop/presentation4.jpg"
+                    alt="Picture 4"
+                  />
+                </picture>
               </li>
             </ul>
           </div>
         </section>
 
-        <!-- Get In section -->
-        <section class="getin-section">
-          <!-- CONTAINER -->
-          <div class="container getin-section__container">
-            <div class="getin-section__order">
-              <form action="#">
-                <!-- Title -->
-                <h2 class="getin-section__title">Онлайн-запись</h2>
-                <div class="getin-section__inputs-wrapper">
-                  <input type="text" class="getin-section__input" name="name" placeholder="Имя*" />
-                  <input
+        <div class="container getin-and-contacts-wrapper">
+          <!-- Get In section -->
+          <section class="getin-section">
+            <!-- CONTAINER -->
+            <div class="container getin-section__container">
+              <div class="getin-section__order">
+                <form action="#">
+                  <!-- Title -->
+                  <h2 class="getin-section__title">Онлайн-запись</h2>
+                  <div class="getin-section__inputs-wrapper">
+                    <input
+                      type="text"
+                      class="getin-section__input"
+                      name="name"
+                      placeholder="Имя*"
+                    />
+                    <input
+                      type="text"
+                      class="getin-section__input"
+                      name="phone"
+                      placeholder="Телефон*"
+                    />
+                  </div>
+                  <textarea
                     type="text"
-                    class="getin-section__input"
-                    name="phone"
-                    placeholder="Телефон*"
-                  />
-                </div>
-                <textarea
-                  type="text"
-                  class="getin-section__area"
-                  name="text"
-                  placeholder="Сообщение"
-                  rows="6"
-                ></textarea>
+                    class="getin-section__area"
+                    name="text"
+                    placeholder="Сообщение"
+                    rows="6"
+                  ></textarea>
 
-                <!-- Button -->
-                <button class="btn btn--trans getin-section__btn">отправить</button>
-              </form>
-            </div>
-          </div>
-        </section>
-
-        <section class="contacts-section">
-          <!-- CONTAINER -->
-          <div class="container contacts-section__container">
-            <!-- Title -->
-            <h2 class="contacts-section__title">Контакты</h2>
-
-            <div class="contacts-section__wrapper">
-              <ul class="contacts-section__list">
-                <li class="contacts-section__item">ул. Васильковая, 7А Киев, 08132</li>
-                <li class="contacts-section__item">+38 044 111 11 11</li>
-                <li class="contacts-section__item">barbershop@email.com</li>
-              </ul>
-
-              <!-- ****** Description component -->
-              <div class="description contacts-section__description">
-                <!-- First line -->
-                <span class="description__topline contacts-section__description-topline"
-                  >время работы</span
-                >
-                <!-- Second line -->
-                <h2 class="description__title contacts-section__description-title">
-                  Ежедневно с 9:00 до 22:00
-                </h2>
+                  <!-- Button -->
+                  <button class="btn btn--trans getin-section__btn">отправить</button>
+                </form>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
+
+          <!-- Contacts section -->
+          <section class="contacts-section">
+            <!-- CONTAINER -->
+            <div class="container contacts-section__container">
+              <!-- Title -->
+              <h2 class="contacts-section__title">Контакты</h2>
+
+              <div class="contacts-section__wrapper">
+                <ul class="contacts-section__list">
+                  <li class="contacts-section__item">ул. Васильковая, 7А Киев, 08132</li>
+                  <li class="contacts-section__item">+38 044 111 11 11</li>
+                  <li class="contacts-section__item">barbershop@email.com</li>
+                </ul>
+
+                <!-- ****** Description component -->
+                <div class="description contacts-section__description">
+                  <!-- First line -->
+                  <span class="description__topline contacts-section__description-topline"
+                    >время работы</span
+                  >
+                  <!-- Second line -->
+                  <h2 class="description__title contacts-section__description-title">
+                    Ежедневно с 9:00 до 22:00
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
       </section>
     </main>
 

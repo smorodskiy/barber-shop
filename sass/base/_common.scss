@@ -12,7 +12,7 @@
   max-width: $container-max-width;
   // width: 100%;
 
-  @include media(">tablet") {    
+  @include media(">tablet") {
     max-width: $t-container-max-width;
     padding-top: $t-padding-top-bottom;
     padding-bottom: $t-padding-top-bottom;
@@ -32,4 +32,19 @@
   font-weight: $font-weight-default;
   background: $background-color-default;
   color: $text-color-default;
+}
+
+// Wrapper for two sections Get In and Contacts
+.getin-and-contacts-wrapper {
+  padding: 0;
+  max-width: 478px;
+  @include media(">tablet") {
+    // display: flex;
+    max-width: 750px;
+  }
+
+  @include media(">desktop") {
+    display: flex;
+    max-width: 1230px;
+  }
 }

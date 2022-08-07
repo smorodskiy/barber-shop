@@ -1,8 +1,13 @@
 .contacts-section {
-  background-color: #191c26;
+
   &__container {
+    background-color: #191c26;
+    background-image: url(../images/mobile/contacts_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+      // padding-left: 0;
+    // padding-right: 0;
     // @extend %top-bottom-shifting-section;
-    background-image: url(../images/contacts_bg.png);
   }
 
   &__title {
@@ -28,6 +33,7 @@
   }
 
   &__item:nth-child(3) {
+    margin-bottom: 0;
     text-decoration: underline;
   }
 
@@ -36,9 +42,10 @@
   }
 
   &__description-title {
+    padding-bottom: 0;
     font-family: "Open Sans";
     font-weight: 400;
-    font-size: 18px;  
+    font-size: 18px;
     line-height: 30px;
     letter-spacing: 0.02em;
     color: $text-color-second;
@@ -46,7 +53,7 @@
 
   @include media(">tablet") {
     &__container {
-      background-image: url(../images/contacts_bg_medium.png);
+      background-image: url(../images/tablet/contacts_bg.png);
     }
 
     &__wrapper {
@@ -56,11 +63,33 @@
 
     &__list {
       width: 50%;
+      margin-bottom: 0;
     }
 
     &__description {
       width: 50%;
     }
-  
+  }
+
+  @include media(">desktop") {
+    width: 50%;
+
+    &__container {
+      padding-left: 100px;
+      padding-right: 100px;
+      background-image: url(../images/desktop/contacts_bg.png);
+    }
+
+    &__title {
+      text-align: left;
+    }
+
+    &__list {
+      margin-bottom: 66px;
+    }
+
+    &__wrapper {
+      display: block;
+    }
   }
 }
