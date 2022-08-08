@@ -86,6 +86,15 @@
     margin: auto;
   }
 
+  @include media("<phone") {
+    &__left-wrapper {
+      padding: 30px 15px 0 15px;
+    }
+    &__right-wrapper {
+      padding: 0 15px 30px 15px;
+    }
+  }
+
   @include media(">tablet") {
     &__container {
       background-image: url(../images/tablet/price_bg.png);

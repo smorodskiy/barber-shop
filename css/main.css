@@ -618,6 +618,14 @@ li {
   display: block;
   margin: auto;
 }
+@media (max-width: 479px) {
+  .price-section__left-wrapper {
+    padding: 30px 15px 0 15px;
+  }
+  .price-section__right-wrapper {
+    padding: 0 15px 30px 15px;
+  }
+}
 @media (min-width: 769px) {
   .price-section__container {
     background-image: url(../images/tablet/price_bg.png);
