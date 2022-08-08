@@ -30,14 +30,14 @@
   &__title {
     margin-bottom: 8px;
     font-size: $font-size-5;
-    line-height: 25px;
+    line-height: 1.39;
     color: $text-color-4;
   }
 
   &__content {
     margin-bottom: 30px;
     font-size: $font-size-3;
-    line-height: 19px;
+    line-height: 1.36;
     color: $accent-color;
   }
 
@@ -51,7 +51,7 @@
 
   &__description-title {
     font-size: $font-size-6;
-    line-height: 49px;
+    line-height: 1.17;
     color: $text-color-4;
     letter-spacing: 0.05em;
   }

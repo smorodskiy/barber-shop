@@ -121,7 +121,7 @@ li {
 .navigation__link {
   font-weight: 600;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 1.33;
   letter-spacing: 0.1em;
   color: #fff;
 }
@@ -155,7 +155,7 @@ li {
   align-items: center;
   font-weight: 600;
   font-size: 11px;
-  line-height: 15px;
+  line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: rgba(157, 164, 189, 0.6);
@@ -172,13 +172,13 @@ li {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 48px;
-  line-height: 56px;
+  line-height: 1.17;
   letter-spacing: 0.05em;
   color: #fff;
 }
 .description__content {
   font-size: 16px;
-  line-height: 26px;
+  line-height: 1.62;
   letter-spacing: 0.02em;
   color: #9DA4BD;
 }
@@ -204,7 +204,7 @@ li {
   display: block;
   font-weight: 600;
   font-size: 11px;
-  line-height: 15px;
+  line-height: 1.36;
   letter-spacing: 0.2em;
   color: #303030;
 }
@@ -240,7 +240,7 @@ li {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 1.33;
   letter-spacing: 0.09em;
   text-transform: uppercase;
   border-radius: 25px;
@@ -309,7 +309,7 @@ li {
   flex-direction: column;
   justify-content: space-between;
   font-weight: 600;
-  line-height: 25px;
+  line-height: 1.39;
   letter-spacing: 0.1em;
   color: #303030;
   background-color: #fff;
@@ -471,7 +471,7 @@ li {
   margin-top: 35px;
   font-weight: 600;
   font-size: 11px;
-  line-height: 15px;
+  line-height: 1.36;
   letter-spacing: 0.2em;
   color: #9DA4BD;
 }
@@ -490,7 +490,7 @@ li {
   padding-top: 20px;
   padding-bottom: 40px;
   font-size: 14px;
-  line-height: 26px;
+  line-height: 1.86;
   letter-spacing: 0.02em;
 }
 .about-us-section__description-topline {
@@ -500,7 +500,7 @@ li {
   max-width: 333px;
   font-weight: 700;
   font-size: 28px;
-  line-height: 33px;
+  line-height: 1.18;
   color: #303030;
 }
 .about-us-section__description-content {
@@ -545,12 +545,12 @@ li {
 }
 .price-section__description-title {
   font-size: 42px;
-  line-height: 49px;
+  line-height: 1.17;
   padding-bottom: 44px;
 }
 .price-section__box {
   font-size: 14px;
-  line-height: 30px;
+  line-height: 2.14;
   letter-spacing: 0.02em;
   color: #9DA4BD;
   background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
@@ -644,7 +644,7 @@ li {
 }
 .awards_section__description-title {
   font-size: 42px;
-  line-height: 49px;
+  line-height: 1.17;
   color: #303030;
   letter-spacing: 0.05em;
 }
@@ -652,7 +652,7 @@ li {
   margin-bottom: 44px;
   color: #555555;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 1.88;
 }
 .awards_section__list {
   display: flex;
@@ -676,7 +676,7 @@ li {
   justify-content: center;
   font-weight: 700;
   font-size: 42px;
-  line-height: 57px;
+  line-height: 1.36;
 }
 .awards_section__price::after {
   position: relative;
@@ -684,14 +684,14 @@ li {
   left: 2px;
   font-weight: 600;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 1.83;
   color: #ff6c00;
   content: "+";
 }
 .awards_section__text {
   font-weight: 600;
   font-size: 11px;
-  line-height: 15px;
+  line-height: 1.36;
 }
 @media (min-width: 769px) {
   .awards_section__left-wrapper {
@@ -739,13 +739,13 @@ li {
 .masters-section__title {
   margin-bottom: 8px;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 1.39;
   color: #303030;
 }
 .masters-section__content {
   margin-bottom: 30px;
   font-size: 14px;
-  line-height: 19px;
+  line-height: 1.36;
   color: #FF6C00;
 }
 .masters-section__description {
@@ -756,7 +756,7 @@ li {
 }
 .masters-section__description-title {
   font-size: 42px;
-  line-height: 49px;
+  line-height: 1.17;
   color: #303030;
   letter-spacing: 0.05em;
 }
@@ -778,7 +778,7 @@ li {
 .presentation-section__description-topline {
   margin-bottom: 44px;
   color: #303030;
-  line-height: 21px;
+  line-height: 1.31;
 }
 .presentation-section__list {
   display: flex;
@@ -806,7 +806,7 @@ li {
   margin-bottom: 44px;
   font-family: "Raleway";
   font-size: 42px;
-  line-height: 49px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.05em;
   color: #fff;
@@ -834,7 +834,7 @@ li {
   border-bottom: 1px solid #555555;
   font-weight: 600;
   font-size: 11px;
-  line-height: 15px;
+  line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   resize: none;
@@ -877,7 +877,7 @@ li {
   margin-bottom: 40px;
   font-family: "Raleway";
   font-size: 42px;
-  line-height: 49px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.05em;
   color: #fff;
@@ -887,7 +887,7 @@ li {
 }
 .contacts-section__item {
   margin-bottom: 20px;
-  line-height: 30px;
+  line-height: 1.67;
   letter-spacing: 0.02em;
   color: #9DA4BD;
 }
@@ -903,7 +903,7 @@ li {
   font-family: "Open Sans";
   font-weight: 400;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 1.67;
   letter-spacing: 0.02em;
   color: #9DA4BD;
 }

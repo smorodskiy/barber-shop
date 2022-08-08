@@ -12,7 +12,7 @@
 
   &__description-title {
     font-size: $font-size-6;
-    line-height: 49px;
+    line-height: 1.17;
     color: $text-color-4;
     letter-spacing: 0.05em;
   }
@@ -21,7 +21,7 @@
     margin-bottom: 44px;
     color: $text-color-default;
     font-size: $font-size-5;
-    line-height: 30px;
+    line-height: 1.88;
   }
 
   &__list {
@@ -50,7 +50,7 @@
     justify-content: center;
     font-weight: $font-weight-2;
     font-size: $font-size-6;
-    line-height: 57px;
+    line-height: 1.36;
   }
 
   &__price::after {
@@ -58,8 +58,8 @@
     top: 8px;
     left: 2px;
     font-weight: 600;
-    font-size: 16px;
-    line-height: 22px;
+    font-size: $font-size-4;
+    line-height: 1.83;
     color: #ff6c00;
     content: "+";
   }
@@ -67,7 +67,7 @@
   &__text {
     font-weight: $font-weight-1;
     font-size: $font-size-1;
-    line-height: 15px;
+    line-height: 1.36;
   }
 
   @include media(">tablet") {

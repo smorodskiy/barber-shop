@@ -14,7 +14,7 @@
     margin-bottom: 40px;
     font-family: "Raleway";
     font-size: $font-size-6;
-    line-height: 49px;
+    line-height: 1.17;
     text-align: center;
     letter-spacing: 0.05em;
 
@@ -27,7 +27,7 @@
 
   &__item {
     margin-bottom: 20px;
-    line-height: 30px;
+    line-height: 1.67;
     letter-spacing: 0.02em;
     color: $text-color-second;
   }
@@ -45,8 +45,8 @@
     padding-bottom: 0;
     font-family: "Open Sans";
     font-weight: 400;
-    font-size: 18px;
-    line-height: 30px;
+    font-size: $font-size-5;
+    line-height: 1.67;
     letter-spacing: 0.02em;
     color: $text-color-second;
   }
