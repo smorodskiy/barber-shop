@@ -12,12 +12,12 @@
   justify-content: space-between;
 
   // FONT
-  font-weight: 600;
+  font-weight: $font-weight-1;
   line-height: 1.39;
   letter-spacing: .1em;
   color: $text-color-4;
 
-  background-color: #fff;
+  background-color: $text-color-third;
   z-index: 100;
 
   &.is-open {
@@ -57,18 +57,34 @@
     transition: padding $anim-duration $anim-function, color $anim-duration $anim-function;
   }
 
+  &__socials-media-link {
+    font-size: $font-size-3;
+  }
+
     // MEDIA TABLET -------------
     @include media("<phone") {
 
-      // padding: 30px;
-      // font-size: 16px;
+      padding-left: 25px;
+      padding-right: 25px;
+      font-size: 16px;
 
-      // &__contact > &__link {
-      //   font-size: 14px;
-      // }
+      &__contact > &__link {
+        font-size: $font-size-3;
+      }
 
-      // &__btn {
-      //   padding: 10px 15px 10px 15px;
+      &__btn {
+        padding: 10px 15px 10px 15px;
+      }
+
+      &__socials-media-link {
+        font-size: $font-size-1;
+      }
+
+      // &__socials-media:first-child::before {
+      //   margin-right: 20px;
+      //   width: 30px;
+      //   border-top: 1px solid #303030;
+      //   content: '1111111111';
       // }
     }
 

@@ -43,6 +43,10 @@
     flex-wrap: wrap;
   }
 
+  &--wrap > &__item {
+    margin-right: 0;
+  }
+
   &--wrap &__item:nth-child(2) {
     display: flex;
     margin-top: 24px;
@@ -58,15 +62,6 @@
 
   &__link--large-font {
     font-size: $font-size-3;
-  }
-
-  // MEDIA TABLET -------------
-  @include media(">tablet") {
-
-  }
-
-  // MEDIA DESKTOP -------------
-  @include media(">desktop") {
   }
 }
 
