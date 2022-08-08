@@ -186,10 +186,12 @@ li {
 .socials-media {
   display: flex;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
 .socials-media__item:first-child {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   margin-right: 40px;
 }
 .socials-media__item:first-child::before {
