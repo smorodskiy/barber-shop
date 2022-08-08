@@ -187,12 +187,6 @@ li {
   display: flex;
   align-items: flex-start;
 }
-.socials-media--vertical {
-  position: relative;
-  left: 50%;
-  transform-origin: left;
-  transform: translateY(calc(50% - 40px)) rotate(-90deg);
-}
 .socials-media__item:first-child {
   display: flex;
   align-items: center;
@@ -211,6 +205,28 @@ li {
   line-height: 15px;
   letter-spacing: 0.2em;
   color: #303030;
+}
+.socials-media--vertical {
+  position: relative;
+  left: 50%;
+  transform-origin: left;
+  transform: translateY(calc(50% - 40px)) rotate(-90deg);
+}
+.socials-media--wrap {
+  flex-wrap: wrap;
+}
+.socials-media--wrap .socials-media__item:nth-child(2) {
+  display: flex;
+  margin-top: 24px;
+}
+.socials-media--wrap .socials-media__item:nth-child(2)::before {
+  display: flex;
+  margin-right: 40px;
+  width: 60px;
+  content: "";
+}
+.socials-media__link--large-font {
+  font-size: 14px;
 }
 .socials-media__link:hover {
   color: #FF6C00;
@@ -283,18 +299,22 @@ li {
 .menu {
   position: fixed;
   top: 0;
-  left: 0;
+  left: 42%;
   bottom: 0;
   right: 0;
   padding: 40px;
   display: none;
   flex-direction: column;
   justify-content: space-between;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: 0.1em;
+  color: #303030;
   background-color: #fff;
   z-index: 100;
 }
 .menu.is-open {
-  display: flex;
+  display: block;
 }
 .menu__icon-close {
   margin: 21px;
@@ -302,56 +322,17 @@ li {
   transform: scale(2);
   border: none;
 }
-.menu__pages {
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 47px;
-  letter-spacing: 0.02em;
-}
 .menu__page--active-page {
   color: #FF6C00;
 }
 .menu__contact, .menu__page {
-  margin-bottom: 32px;
+  margin-bottom: 24px;
 }
 .menu__page:last-child {
-  margin-bottom: 302px;
-}
-.menu__bootom-wrapper {
-  font-weight: 500;
-  letter-spacing: 0.02em;
-}
-.menu__contacts {
-  font-size: 24px;
-  line-height: 28px;
-}
-.menu__contact:first-child {
-  font-size: 34px;
-  line-height: 40px;
-  color: #FF6C00;
+  margin-bottom: 64px;
 }
 .menu__contact:last-child {
   margin-bottom: 64px;
-}
-.menu__social-links {
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 18px;
-  line-height: 22px;
-  color: #FF6C00;
-}
-.menu__social-link {
-  margin-right: 20px;
-}
-.menu__social-link::after {
-  position: relative;
-  left: 10px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  transform: rotate(90deg);
-  content: "";
-}
-.menu__social-link:last-child::after {
-  border: none;
 }
 .menu__link {
   color: inherit;

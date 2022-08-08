@@ -66,8 +66,8 @@
           <button class="btn btn--trans page-header__btn" type="button">Онлайн-запис</button>
 
           <!-- Menu -->
-          <div class="page-header__hum-button">
-            <a class="page-header__hum-link" href="/">
+          <div class="page-header__hum-button" data-menu-open>
+            <a class="page-header__hum-link" href="#">
               <svg class="page-header__hum-icon">
                 <use xlink:href="./images/icons.svg#icon-menu"></use>
               </svg>
@@ -193,7 +193,7 @@
               </p>
 
               <!-- Button -->
-              <button class="btn">онлайн-запись</button>
+              <button type="button" class="btn">онлайн-запись</button>
             </div>
           </div>
         </section>
@@ -245,7 +245,7 @@
             </div>
 
             <!-- Button -->
-            <button class="btn btn--trans price-section__btn">онлайн-запись</button>
+            <button type="button" class="btn btn--trans price-section__btn">онлайн-запись</button>
           </div>
         </section>
 
@@ -701,7 +701,7 @@
                   ></textarea>
 
                   <!-- Button -->
-                  <button class="btn btn--trans getin-section__btn">отправить</button>
+                  <button type="button" class="btn btn--trans getin-section__btn">отправить</button>
                 </form>
               </div>
             </div>
@@ -773,31 +773,25 @@
         <li class="menu__page"><a class="menu__link" href="./contacts.html">Контакти</a></li>
       </ul>
 
-      <div class="menu__bootom-wrapper">
-        <ul class="menu__contacts">
-          <li class="menu__contact">
-            <a class="menu__link" href="tel:380961111111">+38 096 111 11 11</a>
-          </li>
-          <li class="menu__contact">
-            <a class="menu__link" href="mailto:info@example.com">info@devstudio.com</a>
-          </li>
-        </ul>
+      <ul class="menu__contacts">
+        <li class="menu__contact">
+          <a class="menu__link" href="tel:380961111111">+38 096 111 11 11</a>
+        </li>
+        <li class="menu__contact">
+          <button type="button" class="btn menu__btn">онлайн-запись</button>
+        </li>
+      </ul>
 
-        <ul class="menu__social-links">
-          <li class="menu__social-link">
-            <a class="menu__link" href="http://instagram.com/smorodsky">Instagram</a>
-          </li>
-          <li class="menu__social-link">
-            <a class="menu__link" href="http://twitter.com/smorodskiy">Twitter</a>
-          </li>
-          <li class="menu__social-link">
-            <a class="menu__link" href="http://facebook.com/smorodsky">Facebook</a>
-          </li>
-          <li class="menu__social-link">
-            <a class="menu__link" href="http://linkedin.com/in/igor-smorodskiy">LinkedIn</a>
-          </li>
-        </ul>
-      </div>
+      <!-- Social links -->
+      <ul class="socials-media socials-media--wrap">
+        <li class="socials-media__item">
+          <a class="socials-media__link socials-media__link--large-font" href="#">Instagram</a>
+        </li>
+        <li class="socials-media__item">
+          <a class="socials-media__link socials-media__link--large-font" href="#">YouTube</a>
+        </li>
+      </ul>
+
     </div>
 
     <!-- Hamburger menu -->
