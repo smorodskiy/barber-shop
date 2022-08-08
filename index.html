@@ -114,24 +114,56 @@
           <!-- CONTAINER -->
           <div class="container about-us-section__container">
             <!-- Pictures -->
-            <div class="about-us-section__picture-box">
-              <picture class="about-us-section__picture">
-                <source srcset="./images/about-us_img1.jpg" media="(max-width: 1200px)" />
-                <source srcset="./images/desktop/about-us_img1.jpg" media="(min-width: 1201px)" />
-                <img src="./images/desktop/about-us_img1.jpg" alt="Picture 1" />
+            <div class="about-us-section__picture-wrapper">
+              <!-- PIC1 -->
+              <picture class="about-us-section__picture-box">
+                <source
+                  srcset="
+                    ./images/tablet/about-us_img1.jpg    1x,
+                    ./images/tablet/about-us_img1@2x.jpg 2x
+                  "
+                  media="(max-width: 1200px)"
+                  sizes=""
+                />
+                <source
+                  srcset="
+                    ./images/desktop/about-us_img1.jpg    1x,
+                    ./images/desktop/about-us_img1@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  sizes=""
+                />
+                <img
+                  class="about-us-section__picture"
+                  src="./images/desktop/about-us_img1.jpg"
+                  alt="Picture 1"
+                />
               </picture>
-              <picture class="about-us-section__picture">
-                <source srcset="./images/about-us_img2.jpg" media="(max-width: 1200px)" />
-                <source srcset="./images/desktop/about-us_img2.jpg" media="(min-width: 1201px)" />
-                <img src="./images/desktop/about-us_img2.jpg" alt="Picture 2" />
+
+              <!-- PIC2 -->
+              <picture class="about-us-section__picture-box">
+                <source
+                  srcset="
+                    ./images/tablet/about-us_img2.jpg    1x,
+                    ./images/tablet/about-us_img2@2x.jpg 2x
+                  "
+                  media="(max-width: 1200px)"
+                  sizes=""
+                />
+                <source
+                  srcset="
+                    ./images/desktop/about-us_img2.jpg    1x,
+                    ./images/desktop/about-us_img2@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  sizes=""
+                />
+                <img
+                  class="about-us-section__picture"
+                  src="./images/desktop/about-us_img2.jpg"
+                  alt="Picture 1"
+                />
               </picture>
-              <!-- <img
-                class="about-us-section__picture"                
-                srcset="./images/about-us_img1.jpg 270w, ./images/desktop/about-us_img1.jpg 330w"                
-                sizes="(min-width: 1200px) 270px,
-                        (min-width: 768px) 330px"                
-                alt="Picture 1"
-              /> -->
             </div>
 
             <!-- Content box -->
@@ -499,9 +531,31 @@
             <ul class="presentation-section__list">
               <li class="presentation-section__item">
                 <!-- PIC1 -->
-                <picture class="">
-                  <source srcset="./images/presentation/img_1.jpg" media="(max-width: 1200px)" />
-                  <source srcset="./images/desktop/presentation1.jpg" media="(min-width: 1201px)" />
+                <picture class="presentation-section__picture-box">
+                  <source
+                    srcset="
+                      ./images/mobile/presentation1.jpg    1x,
+                      ./images/mobile/presentation1@2x.jpg 2x
+                    "
+                    media="(max-width: 768px)"
+                    sizes=""
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/presentation1.jpg    1x,
+                      ./images/tablet/presentation1@2x.jpg 2x
+                    "
+                    media="(max-width: 1200px)"
+                    sizes=""
+                  />
+                  <source
+                    srcset="
+                      ./images/desktop/presentation1.jpg    1x,
+                      ./images/desktop/presentation1@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    sizes=""
+                  />
                   <img
                     class="presentation-section__picture"
                     src="./images/desktop/presentation1.jpg"
@@ -511,37 +565,103 @@
               </li>
               <li class="presentation-section__item">
                 <!-- PIC2 -->
-                <picture class="">
-                  <source srcset="./images/presentation/img_2.jpg" media="(max-width: 1200px)" />
-                  <source srcset="./images/desktop/presentation2.jpg" media="(min-width: 1201px)" />
+                <picture class="presentation-section__picture-box">
+                  <source
+                    srcset="
+                      ./images/mobile/presentation2.jpg    1x,
+                      ./images/mobile/presentation2@2x.jpg 2x
+                    "
+                    media="(max-width: 768px)"
+                    sizes=""
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/presentation2.jpg    1x,
+                      ./images/tablet/presentation2@2x.jpg 2x
+                    "
+                    media="(max-width: 1200px)"
+                    sizes=""
+                  />
+                  <source
+                    srcset="
+                      ./images/desktop/presentation2.jpg    1x,
+                      ./images/desktop/presentation2@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    sizes=""
+                  />
                   <img
                     class="presentation-section__picture"
                     src="./images/desktop/presentation2.jpg"
-                    alt="Picture 2"
+                    alt="Picture 1"
                   />
                 </picture>
               </li>
               <li class="presentation-section__item">
                 <!-- PIC3 -->
-                <picture class="">
-                  <source srcset="./images/presentation/img_3.jpg" media="(max-width: 1200px)" />
-                  <source srcset="./images/desktop/presentation3.jpg" media="(min-width: 1201px)" />
+                <picture class="presentation-section__picture-box">
+                  <source
+                    srcset="
+                      ./images/mobile/presentation3.jpg    1x,
+                      ./images/mobile/presentation3@2x.jpg 2x
+                    "
+                    media="(max-width: 768px)"
+                    sizes=""
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/presentation3.jpg    1x,
+                      ./images/tablet/presentation3@2x.jpg 2x
+                    "
+                    media="(max-width: 1200px)"
+                    sizes=""
+                  />
+                  <source
+                    srcset="
+                      ./images/desktop/presentation3.jpg    1x,
+                      ./images/desktop/presentation3@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    sizes=""
+                  />
                   <img
                     class="presentation-section__picture"
                     src="./images/desktop/presentation3.jpg"
-                    alt="Picture 3"
+                    alt="Picture 1"
                   />
                 </picture>
               </li>
               <li class="presentation-section__item">
                 <!-- PIC4 -->
-                <picture class="">
-                  <source srcset="./images/presentation/img_4.jpg" media="(max-width: 1200px)" />
-                  <source srcset="./images/desktop/presentation4.jpg" media="(min-width: 1201px)" />
+                <picture class="presentation-section__picture-box">
+                  <source
+                    srcset="
+                      ./images/mobile/presentation4.jpg    1x,
+                      ./images/mobile/presentation4@2x.jpg 2x
+                    "
+                    media="(max-width: 768px)"
+                    sizes=""
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/presentation4.jpg    1x,
+                      ./images/tablet/presentation4@2x.jpg 2x
+                    "
+                    media="(max-width: 1200px)"
+                    sizes=""
+                  />
+                  <source
+                    srcset="
+                      ./images/desktop/presentation4.jpg    1x,
+                      ./images/desktop/presentation4@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    sizes=""
+                  />
                   <img
                     class="presentation-section__picture"
                     src="./images/desktop/presentation4.jpg"
-                    alt="Picture 4"
+                    alt="Picture 1"
                   />
                 </picture>
               </li>
