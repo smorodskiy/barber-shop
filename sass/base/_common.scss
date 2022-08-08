@@ -1,7 +1,7 @@
 // Main container
 .container {
-  min-width: 480px;
-  box-sizing: border-box;
+  min-width: 418px;
+  // box-sizing: border-box;
   padding-top: $padding-top-bottom;
   padding-bottom: $padding-top-bottom;
   padding-left: $padding;
@@ -38,7 +38,7 @@
 // Wrapper for two sections Get In and Contacts
 .getin-and-contacts-wrapper {
   padding: 0;
-  max-width: 478px;
+  max-width: 480px;
   @include media(">tablet") {
     // display: flex;
     max-width: 750px;

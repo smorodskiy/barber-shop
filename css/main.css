@@ -19,8 +19,7 @@
 }
 
 .container {
-  min-width: 480px;
-  box-sizing: border-box;
+  min-width: 418px;
   padding-top: 84px;
   padding-bottom: 84px;
   padding-left: 31px;
@@ -57,7 +56,7 @@
 
 .getin-and-contacts-wrapper {
   padding: 0;
-  max-width: 478px;
+  max-width: 480px;
 }
 @media (min-width: 769px) {
   .getin-and-contacts-wrapper {
@@ -726,6 +725,9 @@ li {
   text-align: center;
   letter-spacing: 0.02em;
 }
+.masters-section__item {
+  width: 100%;
+}
 .masters-section__picture-box {
   width: 100%;
 }
@@ -760,9 +762,6 @@ li {
 @media (min-width: 769px) {
   .masters-section__container {
     max-width: 450px;
-  }
-  .masters-section__item {
-    width: 100%;
   }
 }
 @media (min-width: 1201px) {
