@@ -19,6 +19,8 @@
 }
 
 .container {
+  min-width: 480px;
+  box-sizing: border-box;
   padding-top: 84px;
   padding-bottom: 84px;
   padding-left: 31px;
@@ -338,6 +340,18 @@ li {
   color: inherit;
   cursor: pointer;
   transition: padding 0.25s cubic-bezier(0.4, 0, 0.2, 1), color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media (max-width: 479px) {
+  .menu {
+    padding: 30px;
+    font-size: 16px;
+  }
+  .menu__contact > .menu__link {
+    font-size: 14px;
+  }
+  .menu__btn {
+    padding: 10px 15px 10px 15px;
+  }
 }
 
 .menu__icon-close:hover {
