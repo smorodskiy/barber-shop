@@ -45,8 +45,13 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Общий стиль для странцы */
 .page {
+  scroll-behavior: smooth;
   font-family: "Open Sans", "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 400;
