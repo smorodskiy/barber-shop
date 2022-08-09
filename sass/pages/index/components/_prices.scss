@@ -81,9 +81,13 @@
     padding-bottom: 0;
   }
 
-  &__btn {
-    display: block;
-    margin: auto;
+  &__btn {    
+    // margin: auto;
+  }
+
+  &__btn-wrapper {
+    width: 100%;
+    text-align: center;
   }
 
   @include media("<phone") {

@@ -1,11 +1,12 @@
 .btn {
   // height: 50px;
   // width: 200px;
+  display: inline-block;
   padding: 12px 20px 12px 20px;
-  
+
   align-items: center;
 
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: $font-weight-1;
   font-size: $btn-font-size;
   line-height: 1.33;
@@ -15,31 +16,28 @@
   border-radius: 25px;
   border: 1px solid $btn-border-color;
   background: $btn-background-color;
-  color: $btn-text-color;
   cursor: pointer;
 
   &--yellow {
-    color: $btn-background-color;
     background: $btn-background-color-hover;
+    color: $btn-background-color;
   }
 
   &--trans {
-    color: $btn-background-color;
     background: transparent;
+    color: $btn-background-color;
   }
-
 }
 
 // HOVER
 .btn {
-
   &:focus,
   &:hover {
     color: $btn-background-color;
     background: $btn-background-color-hover;
   }
 
-  &--yellow:hover {
+  &--yellow &__link:hover {
     color: $btn-text-color;
     background: $btn-background-color;
   }

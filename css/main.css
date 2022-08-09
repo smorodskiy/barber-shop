@@ -225,6 +225,7 @@ li {
 }
 
 .btn {
+  display: inline-block;
   padding: 12px 20px 12px 20px;
   align-items: center;
   font-family: "Open Sans", sans-serif;
@@ -236,23 +237,22 @@ li {
   border-radius: 25px;
   border: 1px solid #FF6C00;
   background: #fff;
-  color: #303030;
   cursor: pointer;
 }
 .btn--yellow {
-  color: #fff;
   background: #FF6C00;
+  color: #fff;
 }
 .btn--trans {
-  color: #fff;
   background: transparent;
+  color: #fff;
 }
 
 .btn:focus, .btn:hover {
   color: #fff;
   background: #FF6C00;
 }
-.btn--yellow:hover {
+.btn--yellow .btn__link:hover {
   color: #303030;
   background: #fff;
 }
@@ -411,6 +411,10 @@ li {
   display: none;
 }
 .page-header__hum-icon {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   fill: #fff;
   width: 40px;
   height: 40px;
@@ -660,9 +664,9 @@ li {
 .price-section__right-wrapper .price-section__name:last-child, .price-section__right-wrapper .price-section__cost:last-child {
   padding-bottom: 0;
 }
-.price-section__btn {
-  display: block;
-  margin: auto;
+.price-section__btn-wrapper {
+  width: 100%;
+  text-align: center;
 }
 @media (max-width: 479px) {
   .price-section__left-wrapper {
