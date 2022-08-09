@@ -210,29 +210,14 @@ li {
   color: #303030;
 }
 .socials-media--vertical {
+  flex-wrap: nowrap;
   position: relative;
   left: 50%;
   transform-origin: left;
   transform: translateY(calc(50% - 40px)) rotate(-90deg);
 }
-.socials-media--wrap {
-  flex-wrap: wrap;
-}
-.socials-media--wrap > .socials-media__item {
-  margin-right: 0;
-}
-.socials-media--wrap .socials-media__item:nth-child(2) {
-  display: flex;
-  margin-top: 24px;
-}
-.socials-media--wrap .socials-media__item:nth-child(2)::before {
-  display: flex;
-  margin-right: 40px;
-  width: 60px;
-  content: "";
-}
-.socials-media__link--large-font {
-  font-size: 14px;
+.socials-media--vertical > .socials-media__item:first-child {
+  flex-wrap: nowrap;
 }
 
 .socials-media__link:hover {
@@ -349,6 +334,22 @@ li {
 .menu__socials-media-link {
   font-size: 14px;
 }
+.menu__socials-media {
+  flex-wrap: wrap;
+}
+.menu__socials-media > .menu__socials-media-item {
+  margin-right: 0;
+}
+.menu__socials-media .menu__socials-media-item:nth-child(2) {
+  display: flex;
+  margin-top: 24px;
+}
+.menu__socials-media .menu__socials-media-item:nth-child(2)::before {
+  display: flex;
+  margin-right: 40px;
+  width: 60px;
+  content: "";
+}
 @media (max-width: 479px) {
   .menu {
     padding-left: 25px;
@@ -363,6 +364,10 @@ li {
   }
   .menu__socials-media-link {
     font-size: 11px;
+  }
+  .menu__socials-media-item:first-child:before, .menu__socials-media > .menu__socials-media-item:nth-child(2):before {
+    width: 40px;
+    margin-right: 20px;
   }
 }
 
@@ -499,6 +504,27 @@ li {
   line-height: 1.36;
   letter-spacing: 0.2em;
   color: #9DA4BD;
+}
+@media (max-width: 479px) {
+  .page-footer__socials-media {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .page-footer__socials-media > .page-footer__socials-media-item {
+    margin-right: 0;
+  }
+  .page-footer__socials-media .page-footer__socials-media-item:nth-child(2) {
+    display: flex;
+    margin-top: 24px;
+  }
+  .page-footer__socials-media .page-footer__socials-media-item:nth-child(2)::before {
+    display: flex;
+    content: "";
+  }
+  .page-footer__socials-media-item:first-child:before, .page-footer__socials-media > .page-footer__socials-media-item:nth-child(2):before {
+    width: 40px;
+    margin-right: 20px;
+  }
 }
 @media (min-width: 769px) {
   .page-footer__container {

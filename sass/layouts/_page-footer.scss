@@ -18,6 +18,34 @@
     color: $text-color-second;
   }
 
+  @include media("<phone") {
+    // Mod for wrapping line
+    &__socials-media {
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+    &__socials-media > &__socials-media-item {
+      margin-right: 0;
+    }
+    &__socials-media &__socials-media-item:nth-child(2) {
+      display: flex;
+      margin-top: 24px;
+    }
+    
+    &__socials-media &__socials-media-item:nth-child(2)::before {
+      display: flex;
+      // border-top: 1px solid $text-color-4;
+      content: "";
+    }
+
+    // Change margin and width to small
+    &__socials-media-item:first-child:before,
+    &__socials-media > &__socials-media-item:nth-child(2):before {      
+      width: 40px;
+      margin-right: 20px;
+    }
+  }
+
   @include media(">tablet") {
     &__container {
       margin: 56px auto 56px auto;

@@ -6,16 +6,13 @@
   flex-wrap: wrap;
   // align-items: center;
 
-  &__item {
-  }
-
+  // Line before text, 1px
   &__item:first-child {
     display: flex;    
     align-items: center;
     flex-wrap: wrap;
     margin-right: 40px;
   }
-
   &__item:first-child::before {
     margin-right: 40px;
     width: 60px;
@@ -23,6 +20,7 @@
     content: "";
   }
 
+  // Font for each media item
   &__link {
     display: block;
     font-weight: $font-weight-1;
@@ -32,37 +30,37 @@
     color: $text-color-4;
   }
 
+  // Modificator for Vertical position
   &--vertical {
+    flex-wrap: nowrap;
     position: relative;
     left: 50%;
     transform-origin: left;
     transform: translateY(calc(50% - 40px)) rotate(-90deg);
   }
-
-  &--wrap {
-    flex-wrap: wrap;
+  &--vertical > &__item:first-child {
+    flex-wrap: nowrap;
   }
 
-  &--wrap > &__item {
-    margin-right: 0;
-  }
+  // Mod for wrapping line 
+  // &--wrap {
+  //   flex-wrap: wrap;
+  // }
+  // &--wrap > &__item {
+  //   margin-right: 0;
+  // }
+  // &--wrap &__item:nth-child(2) {
+  //   display: flex;
+  //   margin-top: 24px;
+  // }
+  // &--wrap &__item:nth-child(2)::before {
+  //   display: flex;
+  //   margin-right: 40px;
+  //   width: 60px;
+  //   // border-top: 1px solid $text-color-4;
+  //   content: "";
+  // }
 
-  &--wrap &__item:nth-child(2) {
-    display: flex;
-    margin-top: 24px;
-  }
-
-  &--wrap &__item:nth-child(2)::before {
-    display: flex;
-    margin-right: 40px;
-    width: 60px;
-    // border-top: 1px solid $text-color-4;
-    content: "";
-  }
-
-  &__link--large-font {
-    font-size: $font-size-3;
-  }
 }
 
 // ------ Hover

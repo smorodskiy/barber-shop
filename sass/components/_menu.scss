@@ -6,7 +6,7 @@
   right: 0;
   padding: 40px;
   // visibility: hidden;
-  
+
   display: none;
   flex-direction: column;
   justify-content: space-between;
@@ -14,7 +14,7 @@
   // FONT
   font-weight: $font-weight-1;
   line-height: 1.39;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   color: $text-color-4;
 
   background-color: $text-color-third;
@@ -61,33 +61,51 @@
     font-size: $font-size-3;
   }
 
-    // MEDIA TABLET -------------
-    @include media("<phone") {
+  // Mod for wrapping line
+  &__socials-media {
+    flex-wrap: wrap;
+  }
+  &__socials-media > &__socials-media-item {
+    margin-right: 0;
+  }
+  &__socials-media &__socials-media-item:nth-child(2) {
+    display: flex;
+    margin-top: 24px;
+  }
+  &__socials-media &__socials-media-item:nth-child(2)::before {
+    display: flex;
+    margin-right: 40px;
+    width: 60px;
+    // border-top: 1px solid $text-color-4;
+    content: "";
+  }
 
-      padding-left: 25px;
-      padding-right: 25px;
-      font-size: 16px;
+  // MEDIA TABLET -------------
+  @include media("<phone") {
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 16px;
 
-      &__contact > &__link {
-        font-size: $font-size-3;
-      }
-
-      &__btn {
-        padding: 10px 15px 10px 15px;
-      }
-
-      &__socials-media-link {
-        font-size: $font-size-1;
-      }
-
-      // &__socials-media:first-child::before {
-      //   margin-right: 20px;
-      //   width: 30px;
-      //   border-top: 1px solid #303030;
-      //   content: '1111111111';
-      // }
+    &__contact > &__link {
+      font-size: $font-size-3;
     }
 
+    &__btn {
+      padding: 10px 15px 10px 15px;
+    }
+
+    // Change font to small
+    &__socials-media-link {
+      font-size: $font-size-1;
+    }
+
+    // Change margin and width to small
+    &__socials-media-item:first-child:before,
+    &__socials-media > &__socials-media-item:nth-child(2):before {
+      width: 40px;
+      margin-right: 20px;
+    }
+  }
 }
 
 // Hover
@@ -96,7 +114,7 @@
   &__icon-close:hover {
     fill: $accent-color;
   }
-  
+
   &__page:hover &__link {
     padding-left: 5px;
     color: $accent-color;
