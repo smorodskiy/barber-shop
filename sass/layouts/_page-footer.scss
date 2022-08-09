@@ -19,7 +19,7 @@
   }
 
   @include media("<phone") {
-    // Mod for wrapping line
+    // 
     &__socials-media {
       flex-wrap: wrap;
       flex-direction: column;
@@ -33,8 +33,7 @@
     }
     
     &__socials-media &__socials-media-item:nth-child(2)::before {
-      display: flex;
-      // border-top: 1px solid $text-color-4;
+      display: flex;      
       content: "";
     }
 
