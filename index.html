@@ -56,14 +56,15 @@
           </nav>
 
           <!-- Contacts -->
-          <!-- <ul class="contacts">
-                <li class="contacts__item">
-                  <a class="contacts__link" href="tel:380441111111"> +38 044 111 11 11 </a>
-                </li>
-              </ul> -->
+          <ul class="page-header__contacts">
+            <li class="page-header__item">
+              <a class="page-header__link" href="tel:380441111111"> +38 044 111 11 11 </a>
+            </li>
+          </ul>
 
           <!-- Button -->
-          <button class="btn btn--trans page-header__btn" type="button">Онлайн-запис</button>
+          <a class="btn btn--trans page-header__btn" href="#get-in">Онлайн-запис</a>
+          <!-- <button class="btn btn--trans page-header__btn" type="button">Онлайн-запис</button> -->
 
           <!-- Menu -->
           <div class="page-header__hum-button" data-menu-open>
@@ -110,7 +111,7 @@
     <main>
       <section class="page-main">
         <!-- About us section -->
-        <section class="about-us-section">
+        <section id="about-us" class="about-us-section">
           <!-- CONTAINER -->
           <div class="container about-us-section__container">
             <!-- Pictures -->
@@ -193,13 +194,13 @@
               </p>
 
               <!-- Button -->
-              <button type="button" class="btn">онлайн-запис</button>
+              <a class="btn" href="#get-in">Онлайн-запис</a>              
             </div>
           </div>
         </section>
 
         <!-- Prices section -->
-        <section class="price-section">
+        <section id="prices" class="price-section">
           <!-- CONTAINER -->
           <div class="container price-section__container">
             <!-- ****** Description component -->
@@ -245,12 +246,12 @@
             </div>
 
             <!-- Button -->
-            <button type="button" class="btn btn--trans price-section__btn">онлайн-запис</button>
+            <a class="btn btn--trans price-section__btn" href="#get-in">Онлайн-запис</a>            
           </div>
         </section>
 
         <!-- Awards section -->
-        <section class="awards_section">
+        <section id="awards" class="awards_section">
           <!-- CONTAINER -->
           <div class="container awards_section__container">
             <!-- ****** Description component -->
@@ -294,7 +295,7 @@
         </section>
 
         <!-- Masters section -->
-        <section class="masters-section">
+        <section id="masters" class="masters-section">
           <!-- CONTAINER -->
           <div class="container masters-section__container">
             <!-- ****** Description component -->
@@ -516,7 +517,7 @@
         </section>
 
         <!-- Presentation section -->
-        <section class="presentation-section">
+        <section id="presentation" class="presentation-section">
           <!-- CONTAINER -->
           <div class="container presentation-section__container">
             <!-- ****** Description component -->
@@ -671,7 +672,7 @@
 
         <div class="container getin-and-contacts-wrapper">
           <!-- Get In section -->
-          <section class="getin-section">
+          <section id="get-in" class="getin-section">
             <!-- CONTAINER -->
             <div class="container getin-section__container">
               <div class="getin-section__order">
@@ -701,14 +702,16 @@
                   ></textarea>
 
                   <!-- Button -->
-                  <button type="button" class="btn btn--trans getin-section__btn">Відправити</button>
+                  <button type="button" class="btn btn--trans getin-section__btn">                    
+                    Відправити
+                  </button>
                 </form>
               </div>
             </div>
           </section>
 
           <!-- Contacts section -->
-          <section class="contacts-section">
+          <section id="contacts" class="contacts-section">
             <!-- CONTAINER -->
             <div class="container contacts-section__container">
               <!-- Title -->
@@ -766,19 +769,21 @@
       <!-- </button> -->
 
       <ul class="menu__pages">
-        <li class="menu__page menu__page--active-page">
-          <a class="menu__link" href="./index.html">Студія</a>
-        </li>
-        <li class="menu__page"><a class="menu__link" href="./portfolio.html">Портфоліо</a></li>
-        <li class="menu__page"><a class="menu__link" href="./contacts.html">Контакти</a></li>
+        <li class="menu__page"><a class="menu__link" href="#about-us">Про нас</a></li>
+        <li class="menu__page"><a class="menu__link" href="#prices">Послуги та ціни</a></li>
+        <!-- <li class="menu__page"><a class="menu__link" href="#awards">Чому до нас?</a></li> -->
+        <li class="menu__page"><a class="menu__link" href="#masters">Наші майстри</a></li>
+        <!-- <li class="menu__page"><a class="menu__link" href="#presentation">Презентація</a></li> -->
+        <!-- <li class="menu__page"><a class="menu__link" href="#get-in">Онлайн-запис</a></li> -->
+        <li class="menu__page"><a class="menu__link" href="#contacts">Контакти</a></li>
       </ul>
 
       <ul class="menu__contacts">
         <li class="menu__contact">
           <a class="menu__link" href="tel:380961111111">+38 096 111 11 11</a>
         </li>
-        <li class="menu__contact">
-          <button type="button" class="btn menu__btn">онлайн-запись</button>
+        <li class="menu__contact">          
+          <a class="btn menu__btn" href="#get-in">Онлайн-запис</a>
         </li>
       </ul>
 
