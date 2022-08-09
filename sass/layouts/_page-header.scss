@@ -40,8 +40,16 @@
     display: none;
   }
 
+  // &__hum-icon::selection {
+  //   background: none;
+  // }
+
   &__hum-icon {
-    user-select: none;
+    // -webkit-touch-callout: none; /* Safari */
+    //     -webkit-user-select: none; /* Chrome */     
+    //        -moz-user-select: none; /* Firefox */
+    //         -ms-user-select: none; /* Internet Explorer/Edge */
+    //             user-select: none; 
     fill: #fff;
     width: 40px;
     height: 40px;

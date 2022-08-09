@@ -6,8 +6,9 @@
   // Menu handle
   const mobileMenuRef = document.querySelector("[data-menu]");
 
-  const toggleFunc = () => {
-
+  const toggleFunc = (e) => {
+    e.preventDefault();
+    // console.log(e);
     // Check attr aria-expanded and set to const True or False
     const expanded = mobileMenuRef.getAttribute("aria-expanded") === "true" || false;
     console.log(expanded);
